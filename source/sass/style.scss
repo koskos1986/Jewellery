@@ -1,3 +1,5 @@
-h1 {
-  color: red;
-}
+@import "service/variables.scss";
+@import "service/media-mixins.scss";
+@import "service/fonts.scss";
+@import "service/mixins.scss";
+@import "global.scss";
