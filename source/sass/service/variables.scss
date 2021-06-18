@@ -3,6 +3,7 @@ $desktop-width: 1024px;
 $tablet-width: 1023px;
 $mobile-width: 767px;
 $min-width: 320px;
+$max-width: 1366px;
 $retina-x2: 2dppx;
 $padding-desktop: 98px;
 $padding-tablet: 45px;
@@ -16,10 +17,11 @@ $primary-brown: #a87b62;
 $bg-gray: #f0eae4;
 $text-gray: #9b9997;
 $bg-color-overlay: rgba(29, 22, 19, 0.25);
+$gray-line: #f6f5f4;
 
 // fonts
 $font-family-primary: "Poppins", "Arial", sans-serif;
-$font-family-secondary: "Cormorant Garamond", "Georgia", sans-serif;
+$font-family-secondary: "Cormorant Garamond", "Georgia", serif;
 $font-size: 16px;
 $line-height: 21px;
 $color-text: $text-black;

@@ -1,0 +1,26 @@
+.form {
+  position: relative;
+  width: 35%;
+  margin-top: 15px;
+
+  @include tablet {
+    display: none;
+  }
+}
+
+.form input {
+  width: 100%;
+  padding-left: 39px;
+  border: none;
+  font-size: 14px;
+
+  line-height: $line-height;
+  color: $text-gray;
+
+  &::placeholder {
+    font-family: $font-family-primary;
+    font-weight: $medium;
+    font-size: 14px;
+    color: $text-gray;
+  }
+}

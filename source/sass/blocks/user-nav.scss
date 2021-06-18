@@ -1,0 +1,42 @@
+.user-nav {
+  @include list-reset;
+
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  width: 35%;
+
+  @include tablet {
+    width: 40px;
+    margin-top: 7px;
+  }
+}
+
+.user-nav__item:first-child {
+  margin-right: 15px;
+}
+
+.user-nav__link {
+  display: block;
+  padding: 15px 10px;
+  font-size: 14px;
+  font-weight: $medium;
+  line-height: $line-height;
+  color: $text-black;
+}
+
+.user-nav__item--cart span,
+.user-nav__item--login {
+  @include tablet {
+    display: none;
+  }
+}
+
+.user-nav__link svg {
+  display: none;
+
+  @include tablet {
+    display: block;
+    fill: transparent;
+  }
+}

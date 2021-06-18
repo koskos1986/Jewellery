@@ -4,10 +4,97 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Стартовый шаблон</title>
+  <meta name="description" content="Продаем ювелирные украшения">
+  <title>Jewellery - Ювелирный магазин</title>
   <link rel="stylesheet" href="css/style.min.css">
+  <link rel="preload" href="fonts/Poppins-Medium.woff2" as="font">
+  <link rel="preload" href="fonts/CormorantGaramond-Bold.woff2" as="font">
+  <link rel="preload" href="fonts/CormorantGaramond-Italic.woff2" as="font">
 </head>
 <body>
-  <h1>Добро пожаловать в Лигу А.</h1>
+
+  <header class="header">
+    <div class="header__container header__container--top">
+      <button class="header__btn btn btn--burger js-btn-menu" type="button" aria-label="Open or close a menu">
+        <svg class="btn btn--img" width="25" height="16">
+          <use xlink:href="img/sprite-auto.svg#icon-burger"></use>
+        </svg>
+      </button>
+      <form class="header__form form form--search" action="https://echo.htmlacademy.ru" method="get">
+        <label class="form__label">
+          <input type="search" name="search" placeholder="Type here to search">
+        </label>
+        <button class="btn btn__search" type="submit" aria-label="Search">
+          <svg class="btn btn--img" width="14" height="14">
+            <use xlink:href="img/sprite-auto.svg#icon-search"></use>
+          </svg>
+        </button>
+      </form>
+      <a href="#" class="header__logo">
+        <svg width="66" height="66">
+          <use xlink:href="img/sprite-auto.svg#icon-logo"></use>
+        </svg>
+      </a>
+      <ul class="user-nav">
+        <li class="user-nav__item user-nav__item--login">
+          <a href="login.html" class="user-nav__link">Login</a>
+        </li>
+        <li class="user-nav__item user-nav__item--cart">
+          <a href="#" class="user-nav__link">
+            <span>Cart</span>
+            <span>0</span>
+            <svg class="btn btn--img" width="20" height="18">
+              <use xlink:href="img/sprite-auto.svg#icon-cart"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="header__container-bottom">
+      <nav class="header__nav nav">
+          <ul class="nav__list">
+            <li class="nav__list-item">
+              <a href="#" class="nav__list-link">What's new</a>
+            </li>
+            <li class="nav__list-item">
+              <a href="#" class="nav__list-link">Chokers</a>
+            </li>
+            <li class="nav__list-item">
+              <a href="#" class="nav__list-link">Necklaces</a>
+            </li>
+            <li class="nav__list-item">
+              <a href="#" class="nav__list-link">Rings</a>
+            </li>
+            <li class="nav__list-item">
+              <a href="#" class="nav__list-link">Earrings</a>
+            </li>
+          </ul>
+          <ul class="nav__list nav__list--tablet">
+            <li class="nav__list-item">
+              <a href="#">About CH</a>
+            </li>
+            <li class="nav__list-item">
+              <a href="#">Stores & Hours</a>
+            </li>
+            <li class="nav__list-item">
+              <a href="#">Contact Us</a>
+            </li>
+            <li class="nav__item nav__item--login">
+              <a class="js-login" href="login.html">Login</a>
+            </li>
+          </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main">
+    <section class="lead">
+      <h1 class="lead__heading">Perfection</h1>
+      <p class="lead__text">made to be yours</p>
+    </section>
+  </main>
+
+  <footer class="footer"></footer>
 </body>
 </html>

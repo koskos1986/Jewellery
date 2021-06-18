@@ -52,7 +52,7 @@ gulp.task('images', function () {
   return gulp.src('source/img/**/*.{png,jpg,svg}')
       .pipe(imagemin([
         imagemin.optipng({optimizationLevel: 3}),
-        imagemin.jpegtran({progressive: true}),
+        imagemin.mozjpeg({progressive: true}),
         imagemin.svgo()
       ]))
 
@@ -67,7 +67,7 @@ gulp.task('webp', function () {
 });
 
 gulp.task('sprite', function () {
-  return gulp.src('source/img/{icon-*,logo*}.svg')
+  return gulp.src('source/img/svg/{icon-*,logo*}.svg')
       .pipe(svgstore({inlineSvg: true}))
       .pipe(rename('sprite-auto.svg'))
       .pipe(gulp.dest('build/img'));

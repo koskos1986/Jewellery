@@ -1,0 +1,67 @@
+.lead {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 463px;
+  background-image: url("../img/jpeg/backgrounds/bg-main-desktop@1x.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @include retina {
+    background-image: url("../img/jpeg/backgrounds/bg-main-desktop@2x.webp");
+  }
+
+  @include tablet {
+    background-image: url("../img/jpeg/backgrounds/bg-main-tablet@1x.webp");
+
+    @include retina {
+      background-image: url("../img/jpeg/backgrounds/bg-main-tablet@2x.webp");
+    }
+  }
+
+  @include mobile {
+    background-image: url("../img/jpeg/backgrounds/bg-main-mobile@1x.webp");
+
+    @include retina {
+      background-image: url("../img/jpeg/backgrounds/bg-main-mobile@2x.webp");
+    }
+  }
+}
+
+.lead__heading {
+  @include style-reset;
+
+  font-family: $font-family-secondary;
+  font-size: 45px;
+  font-weight: $bold;
+  line-height: 58px;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: $white;
+  text-transform: uppercase;
+
+  @include mobile {
+    font-size: 38px;
+    line-height: 49.4px;
+  }
+}
+
+.lead__text {
+  @include style-reset;
+
+  font-family: $font-family-secondary;
+  font-size: 38px;
+  font-style: italic;
+  font-weight: $regular;
+  line-height: 49.4px;
+  text-align: center;
+  color: $white;
+
+  @include mobile {
+    font-size: 34px;
+    line-height: 44.2px;
+  }
+}
