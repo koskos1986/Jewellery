@@ -23,4 +23,11 @@
     font-size: 14px;
     color: $text-gray;
   }
+
+  @include tablet {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 21px;
+  }
 }

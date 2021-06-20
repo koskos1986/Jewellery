@@ -16,7 +16,7 @@
   <header class="header">
     <div class="header__container header__container--top">
       <button class="header__btn btn btn--burger js-btn-menu" type="button" aria-label="Open or close a menu">
-        <svg class="btn btn--img" width="25" height="16">
+        <svg class="btn btn--img" width="25" height="19">
           <use xlink:href="img/sprite-auto.svg#icon-burger"></use>
         </svg>
       </button>
@@ -31,7 +31,7 @@
         </button>
       </form>
       <a href="#" class="header__logo">
-        <svg width="66" height="66">
+        <svg class="header__logo-img" width="66" height="66">
           <use xlink:href="img/sprite-auto.svg#icon-logo"></use>
         </svg>
       </a>
@@ -72,16 +72,16 @@
           </ul>
           <ul class="nav__list nav__list--tablet">
             <li class="nav__list-item">
-              <a href="#">About CH</a>
+              <a class="nav__list-link  nav__list-link--bottom" href="#">About CH</a>
             </li>
             <li class="nav__list-item">
-              <a href="#">Stores & Hours</a>
+              <a class="nav__list-link  nav__list-link--bottom" href="#">Stores & Hours</a>
             </li>
             <li class="nav__list-item">
-              <a href="#">Contact Us</a>
+              <a class="nav__list-link  nav__list-link--bottom" href="#">Contact Us</a>
             </li>
-            <li class="nav__item nav__item--login">
-              <a class="js-login" href="login.html">Login</a>
+            <li class="nav__list-item nav__list-item--login">
+              <a class="nav__list-link nav__list-link--bottom nav__list-link--login js-login" href="login.html">Login</a>
             </li>
           </ul>
       </nav>
@@ -92,6 +92,56 @@
     <section class="lead">
       <h1 class="lead__heading">Perfection</h1>
       <p class="lead__text">made to be yours</p>
+    </section>
+    <section class="products">
+      <div class="products__container">
+        <h2 class="products__heading">New in</h2>
+        <a href="catalog.html" class="products__link">Shop now</a>
+        <button class="btn btn__slider btn__slider--left">
+          <svg width="29" height="9">
+            <use xlink:href="img/sprite-auto.svg#icon-arrow-left"></use>
+          </svg>
+        </button>
+        <button class="btn btn__slider btn__slider--right">
+          <svg width="29" height="9">
+            <use xlink:href="img/sprite-auto.svg#icon-arrow-right"></use>
+          </svg>
+        </button>
+        <div class="products__slider"></div>
+      </div>
+    </section>
+
+    <section class="blog">
+      <div class="blog__container">
+        <h2 class="blog__heading">Blog</h2>
+        <a href="#" class="blog__link">Read all</a>
+        <div class="blog__wrapper article">
+          <article class="article__item">
+            <picture></picture>
+            <div class="article__wrapper">
+              <timedate>September 30, 2019</timedate>
+              <h3 class="article__heading">How to care for your jewellery</h3>
+              <a href="#" class="article__link">Read Article</a>
+            </div>
+          </article>
+          <article class="article__item">
+            <picture></picture>
+            <div class="article__wrapper">
+              <timedate>September 23, 2019</timedate>
+              <h3 class="article__heading">Power of crystals</h3>
+              <a href="#" class="article__link">Read Article</a>
+            </div>
+          </article>
+          <article class="article__item">
+            <picture></picture>
+            <div class="article__wrapper">
+              <timedate>September 16, 2019</timedate>
+              <h3 class="article__heading">AW 19 trends</h3>
+              <a href="#" class="article__link">Read Article</a>
+            </div>
+          </article>
+        </div>
+      </div>
     </section>
   </main>
 

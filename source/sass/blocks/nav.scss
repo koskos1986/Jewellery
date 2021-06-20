@@ -5,6 +5,18 @@
   width: 100%;
   padding-right: $padding-desktop;
   padding-left: $padding-desktop;
+
+  @include tablet {
+    display: flex;
+    flex-direction: column;
+    padding-right: $padding-tablet;
+    padding-left: $padding-tablet;
+  }
+
+  @include mobile {
+    padding-right: $padding-mobile;
+    padding-left: $padding-mobile;
+  }
 }
 
 .nav__list {
@@ -14,8 +26,18 @@
   justify-content: center;
   width: 100%;
 
+  @include tablet {
+    flex-direction: column;
+    color: $white;
+    margin-bottom: 39px;
+  }
+
   &--tablet {
     display: none;
+
+    @include tablet {
+      display: block;
+    }
   }
 }
 
@@ -24,6 +46,17 @@
 
   &:last-child {
     margin-right: 0;
+  }
+
+  @include tablet {
+    margin-right: 0;
+    margin-bottom: 21px;
+  }
+
+  &--login {
+    @include tablet {
+      margin-top: 55px;
+    }
   }
 }
 
@@ -34,4 +67,22 @@
   line-height: 24px;
   font-weight: $medium;
   color: $text-black;
+
+  @include tablet {
+    padding: 0;
+    font-size: 24px;
+    line-height: 36px;
+    color: $white;
+  }
+
+  &--bottom {
+    font-size: 18px;
+    font-weight: $medium;
+    line-height: 23px;
+    color: $text-overlay;
+  }
+
+  &--login {
+    color: $white;
+  }
 }

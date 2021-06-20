@@ -1,0 +1,45 @@
+.products {
+  width: 100%;
+}
+
+.products__container {
+  @include margin-auto;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: $max-width;
+  padding-top: 130px;
+  padding-right: $padding-desktop;
+  padding-bottom: 60px;
+  padding-left: $padding-desktop;
+
+  @include tablet {
+    padding-top: 80px;
+    padding-right: $padding-tablet;
+    padding-bottom: 40px;
+    padding-left: $padding-tablet;
+  }
+
+  @include mobile {
+    padding-top: 70px;
+    padding-right: $padding-mobile;
+    padding-bottom: 35px;
+    padding-left: $padding-mobile;
+  }
+}
+
+.products__heading {
+  @include style-reset;
+  @include heading;
+
+  margin-bottom: 35px;
+}
+
+.products__link {
+  @include style-reset;
+  @include link;
+
+  margin-bottom: 60px;
+}

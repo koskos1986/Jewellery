@@ -2,6 +2,28 @@
   width: 100%;
   display: flex;
   flex-direction: column;
+
+  &--open {
+    @include tablet {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      display: block;
+      background-color: $primary-brown;
+    }
+  }
+}
+
+.header--open + main,
+.header--open + footer {
+  display: none;
+}
+
+.header--open .header__logo-img,
+.header--open .btn__img {
+  fill: $white;
 }
 
 .header__container {
@@ -11,7 +33,7 @@
   justify-content: space-between;
   width: 100%;
   max-width: $max-width;
-  max-height: 115px;
+  // max-height: 115px;
   padding-top: 30px;
   padding-right: $padding-desktop;
   padding-bottom: 19px;
@@ -36,6 +58,21 @@
   @include tablet {
     display: none;
   }
+}
+
+.header--open .header__container-bottom,
+.header--nojs .header__container-bottom {
+  @include tablet {
+    display: block;
+    border-top: none;
+  }
+}
+
+.header--open .header__form,
+.header--nojs .header__form {
+  display: block;
+  width: 100%;
+  order: 1;
 }
 
 .header__btn {
