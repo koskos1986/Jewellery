@@ -3,7 +3,8 @@
   display: flex;
   flex-direction: column;
 
-  &--open {
+  &--open,
+  &--nojs {
     @include tablet {
       position: absolute;
       top: 0;
@@ -17,8 +18,12 @@
 }
 
 .header--open + main,
-.header--open + footer {
-  display: none;
+.header--open + footer,
+.header--nojs + main,
+.header--nojs + footer {
+  @include tablet {
+    display: none;
+  }
 }
 
 .header--open .header__logo-img,
@@ -60,6 +65,12 @@
   }
 }
 
+.header--close .header__container-bottom {
+  @include tablet {
+    display: none;
+  }
+}
+
 .header--open .header__container-bottom,
 .header--nojs .header__container-bottom {
   @include tablet {
@@ -81,4 +92,8 @@
   @include tablet {
     display: block;
   }
+}
+
+.header__btn svg {
+  pointer-events: none;
 }

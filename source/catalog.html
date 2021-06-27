@@ -29,7 +29,7 @@
           </svg>
         </button>
       </form>
-      <a href="#" class="header__logo">
+      <a href="index.html" class="header__logo">
         <svg class="header__logo-img" width="66" height="66">
           <use xlink:href="img/sprite-auto.svg#icon-logo"></use>
         </svg>
@@ -94,10 +94,10 @@
     </section>
     <section class="catalog">
       <div class="catalog__container">
-        <button class="catalog__btn">Filter</button>
+        <button class="catalog__btn btn-primary">Filter</button>
         <aside class="catalog__filter filter">
           <form action="" class="filter__form">
-            <button class="filter__btn">
+            <button class="filter__btn-close">
               <svg>
                 <use></use>
               </svg>
@@ -105,136 +105,168 @@
             <ul class="filter__list">
               <li class="filter__item">
                 <h3 class="filter__heading">Product</h3>
-                <button class="filter__btn"></button>
+                <button class="filter__btn" type="button">
+                  <svg class="filter__btn-icon" width="17" height="9">
+                    <use xlink:href="img/sprite-auto.svg#icon-arrow-down"></use>
+                  </svg>
+                </button>
                 <div class="filter__wrapper">
                   <label>
-                    <input type="text">
+                    <input type="checkbox" checked>
                     <span>Necklaces</span>
                   </label>
                   <label>
-                    <input type="text">
+                    <input type="checkbox" checked>
                     <span>Chokers</span>
                   </label>
                   <label>
-                    <input type="text">
+                    <input type="checkbox">
                     <span>Rings</span>
                   </label>
                   <label>
-                    <input type="text">
+                    <input type="checkbox" checked>
                     <span>Earrings</span>
                   </label>
                 </div>
               </li>
               <li class="filter__item">
                 <h3 class="filter__heading">Material</h3>
-                <button class="filter__btn"></button>
+                <button class="filter__btn" type="button"></button>
+                <div class="filter__wrapper">
+                  <label>
+                    <input type="checkbox" checked>
+                    <span>Gold</span>
+                  </label>
+                  <label>
+                    <input type="checkbox">
+                    <span>Silver</span>
+                  </label>
+                </div>
               </li>
               <li class="filter__item">
                 <h3 class="filter__heading">Collection</h3>
-                <button class="filter__btn"></button>
+                <button class="filter__btn" type="button"></button>
+                <div class="filter__wrapper">
+                  <label>
+                    <input type="checkbox" checked>
+                    <span>Pink flamingo</span>
+                  </label>
+                  <label>
+                    <input type="checkbox" checked>
+                    <span>Dreams</span>
+                  </label>
+                </div>
               </li>
               <li class="filter__item">
                 <h3 class="filter__heading">Price</h3>
-                <button class="filter__btn"></button>
+                <button class="filter__btn" type="button"></button>
               </li>
+              <div class="filter__wrapper filter__wrapper--range">
+              </div>
             </ul>
+            <button class="filter__form-btn btn btn-primary filter__form-btn--submit" type="submit">Apply</button>
+            <button class="filter__form-btn btn btn-primary btn-primary--white" type="button">Clear all</button>
           </form>
         </aside>
-        <ul class="catalog__list">
-          <li class="catalog__item">
-            <a href="" class="catalog__link">
-              <picture></picture>
-              <p class="catalog__text">Double pearl earrings </p>
-              <span class="catalog__price">$ 115</span>
-            </a>
-          </li>
-          <li class="catalog__item">
-            <a href="" class="catalog__link">
-              <picture></picture>
-              <p class="catalog__text">Choker with gold bead</p>
-              <span class="catalog__price">$ 55</span>
-            </a>
-          </li>
-          <li class="catalog__item">
-            <a href="" class="catalog__link">
-              <picture></picture>
-              <p class="catalog__text">Gold layered necklace</p>
-              <span class="catalog__price">$ 155</span>
-            </a>
-          </li>
-          <li class="catalog__item">
-            <a href="" class="catalog__link">
-              <picture></picture>
-              <p class="catalog__text">Blue gemstone pendant</p>
-              <span class="catalog__price">$ 105</span>
-            </a>
-          </li>
-          <li class="catalog__item">
-            <a href="" class="catalog__link">
-              <picture></picture>
-              <p class="catalog__text">Boho earrings</p>
-              <span class="catalog__price">$ 75</span>
-            </a>
-          </li>
-          <li class="catalog__item">
-            <a href="" class="catalog__link">
-              <picture></picture>
-              <p class="catalog__text">Gold bird necklace</p>
-              <span class="catalog__price">$ 135</span>
-            </a>
-          </li>
-          <li class="catalog__item">
-            <a href="" class="catalog__link">
-              <picture></picture>
-              <p class="catalog__text">Black leather choker</p>
-              <span class="catalog__price">$ 85</span>
-            </a>
-          </li>
-          <li class="catalog__item">
-            <a href="" class="catalog__link">
-              <picture></picture>
-              <p class="catalog__text">Necklace with amethyst</p>
-              <span class="catalog__price">$ 145</span>
-            </a>
-          </li>
-          <li class="catalog__item">
-            <a href="" class="catalog__link">
-              <picture></picture>
-              <p class="catalog__text">Elephant earrings</p>
-              <span class="catalog__price">$ 95</span>
-            </a>
-          </li>
-          <li class="catalog__item">
-            <a href="" class="catalog__link">
-              <picture></picture>
-              <p class="catalog__text">Threader necklace</p>
-              <span class="catalog__price">$ 115</span>
-            </a>
-          </li>
-          <li class="catalog__item">
-            <a href="" class="catalog__link">
-              <picture></picture>
-              <p class="catalog__text">Origami crane necklace</p>
-              <span class="catalog__price">$ 105</span>
-            </a>
-          </li>
-          <li class="catalog__item">
-            <a href="" class="catalog__link">
-              <picture></picture>
-              <p class="catalog__text">Marble earrings</p>
-              <span class="catalog__price">$ 95</span>
-            </a>
-          </li>
-        </ul>
-        <div class="main__pagination">
-          <button class="btn btn__pagination btn__pagination--active" type="button" aria-label="Slide 1">1</button>
-          <button class="btn btn__pagination" type="button" aria-label="Slide 2">2</button>
-          <button class="btn btn__pagination" type="button" aria-label="Slide 3">3</button>
-          <button class="btn btn__pagination" type="button" aria-label="Slide 4">4</button>
-          <button class="btn btn__pagination" type="button" aria-label="Slide 5">5</button>
+        <div class="catalog__wrapper">
+          <ul class="catalog__list">
+            <li class="catalog__item">
+              <a href="" class="catalog__link">
+                <picture></picture>
+                <p class="catalog__text">Double pearl earrings </p>
+                <span class="catalog__price">$ 115</span>
+              </a>
+            </li>
+            <li class="catalog__item">
+              <a href="" class="catalog__link">
+                <picture></picture>
+                <p class="catalog__text">Choker with gold bead</p>
+                <span class="catalog__price">$ 55</span>
+              </a>
+            </li>
+            <li class="catalog__item">
+              <a href="" class="catalog__link">
+                <picture></picture>
+                <p class="catalog__text">Gold layered necklace</p>
+                <span class="catalog__price">$ 155</span>
+              </a>
+            </li>
+            <li class="catalog__item">
+              <a href="" class="catalog__link">
+                <picture></picture>
+                <p class="catalog__text">Blue gemstone pendant</p>
+                <span class="catalog__price">$ 105</span>
+              </a>
+            </li>
+            <li class="catalog__item">
+              <a href="" class="catalog__link">
+                <picture></picture>
+                <p class="catalog__text">Boho earrings</p>
+                <span class="catalog__price">$ 75</span>
+              </a>
+            </li>
+            <li class="catalog__item">
+              <a href="" class="catalog__link">
+                <picture></picture>
+                <p class="catalog__text">Gold bird necklace</p>
+                <span class="catalog__price">$ 135</span>
+              </a>
+            </li>
+            <li class="catalog__item">
+              <a href="" class="catalog__link">
+                <picture></picture>
+                <p class="catalog__text">Black leather choker</p>
+                <span class="catalog__price">$ 85</span>
+              </a>
+            </li>
+            <li class="catalog__item">
+              <a href="" class="catalog__link">
+                <picture></picture>
+                <p class="catalog__text">Necklace with amethyst</p>
+                <span class="catalog__price">$ 145</span>
+              </a>
+            </li>
+            <li class="catalog__item">
+              <a href="" class="catalog__link">
+                <picture></picture>
+                <p class="catalog__text">Elephant earrings</p>
+                <span class="catalog__price">$ 95</span>
+              </a>
+            </li>
+            <li class="catalog__item">
+              <a href="" class="catalog__link">
+                <picture></picture>
+                <p class="catalog__text">Threader necklace</p>
+                <span class="catalog__price">$ 115</span>
+              </a>
+            </li>
+            <li class="catalog__item">
+              <a href="" class="catalog__link">
+                <picture></picture>
+                <p class="catalog__text">Origami crane necklace</p>
+                <span class="catalog__price">$ 105</span>
+              </a>
+            </li>
+            <li class="catalog__item">
+              <a href="" class="catalog__link">
+                <picture></picture>
+                <p class="catalog__text">Marble earrings</p>
+                <span class="catalog__price">$ 95</span>
+              </a>
+            </li>
+          </ul>
+          <div class="catalog__pagination-wrapper">
+            <div class="main__pagination">
+              <button class="btn btn__pagination btn__pagination--active" type="button" aria-label="Slide 1">1</button>
+              <button class="btn btn__pagination" type="button" aria-label="Slide 2">2</button>
+              <button class="btn btn__pagination" type="button" aria-label="Slide 3">3</button>
+              <button class="btn btn__pagination" type="button" aria-label="Slide 4">4</button>
+              <button class="btn btn__pagination" type="button" aria-label="Slide 5">5</button>
+            </div>
+            <button class="btn btn__slider btn__slider--prev" type="button" aria-label="Prev slide">Previous</button>
+            <button class="btn btn__slider btn__slider--next" type="button" aria-label="Next slide">Next</button>
+          </div>
         </div>
-        <button class="btn btn__slider btn__slider--prev" type="button" aria-label="Prev slide">Previous</button>
-        <button class="btn btn__slider btn__slider--next" type="button" aria-label="Next slide">Next</button>
       </div>
     </section>
   </main>

@@ -1,0 +1,250 @@
+.filter {
+  position: relative;
+  width: 21.4%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @include tablet {
+    display: none;
+  }
+
+  &--active {
+    @include tablet {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      position: fixed;
+      overflow: scroll;
+      // overflow-scrolling: touch;
+      top: 0;
+      left: 0;
+      background-color: $white;
+      align-items: center;
+      padding-top: 76px;
+      z-index: 5;
+    }
+  }
+}
+
+.filter--active .filter__form {
+  @include tablet {
+    position: relative;
+    width: 423px;
+  }
+
+  @include mobile {
+    width: 270px;
+  }
+}
+
+.filter__form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+
+  @include mobile {
+    align-items: center;
+  }
+}
+
+.filter__btn-close {
+  display: none;
+}
+
+.filter__list {
+  @include list-reset;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.filter__item {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 24px 24px 0;
+  border: 1px solid $primary-brown;
+  border-bottom: none;
+
+  @include tablet {
+    border: none;
+    border-bottom: 1px solid $primary-brown;
+    flex-shrink: 0;
+    padding: 33px 21px 0;
+    min-height: 92px;
+  }
+
+  @include mobile {
+    padding: 24px 21px 0;
+    min-height: 72px;
+  }
+
+  &:last-child {
+    border-bottom: 1px solid $primary-brown;
+    margin-bottom: 35px;
+
+    @include tablet {
+      margin-bottom: 40px;
+    }
+
+    @include mobile {
+      margin-bottom: 30px;
+    }
+  }
+}
+
+.filter__heading {
+  @include style-reset;
+
+  font-family: $font-family-primary;
+  font-size: $font-size;
+  font-weight: $medium;
+  line-height: $line-height;
+  margin-bottom: 21px;
+
+  @include tablet {
+    font-size: 18px;
+    line-height: 23px;
+    margin-bottom: 24px;
+  }
+}
+
+.filter__btn {
+  @include btn-reset;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 60px;
+}
+
+.filter__btn-icon {
+  position: absolute;
+  top: 23px;
+  right: 28px;
+  fill: transparent;
+}
+
+.filter__wrapper {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  margin-bottom: 26px;
+
+  @include tablet {
+    margin-bottom: 36px;
+  }
+
+  @include mobile {
+    margin-bottom: 27px;
+  }
+
+  &--range {
+    margin-bottom: 23px;
+  }
+}
+
+.filter__wrapper label {
+  position: relative;
+  margin-bottom: 9px;
+  cursor: pointer;
+
+  @include tablet {
+    margin-bottom: 17px;
+  }
+}
+
+.filter__wrapper label:last-child {
+  margin-bottom: 0;
+}
+
+
+.filter__wrapper--range > label {
+  display: none;
+}
+
+.filter__wrapper span {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  padding-left: 35px;
+
+  @include tablet {
+    font-size: 16px;
+    line-height: 21px;
+    padding-left: 40px;
+  }
+}
+
+.filter__wrapper input {
+  @include animation;
+  position: absolute;
+  top: 50%;
+  left: 9px;
+  transform: translateY(-50%);
+  appearance: none;
+  width: 15px;
+  height: 15px;
+  border: 1px solid $primary-brown;
+  cursor: pointer;
+
+  @include tablet {
+    left: 10px;
+    width: 18px;
+    height: 18px;
+  }
+}
+
+.filter__form input:hover,
+.filter__form input:focus {
+  background-color: $bg-gray;
+}
+
+.filter__form input:checked {
+  @include animation;
+  background-color: $primary-brown;
+}
+
+.filter__item--active .btn__filter-icon {
+  @include animation;
+  transform: rotate(180deg);
+}
+
+.filter__wrapper--nojs > label {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.filter__wrapper--nojs span {
+  padding-left: 0;
+  margin-bottom: 5px;
+}
+
+.filter__wrapper--nojs input {
+  position: static;
+  appearance: none;
+  width: 70px;
+  height: 30px;
+  transform: none;
+  text-align: center;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-bottom: 0;
+}
+
+.filter__wrapper--nojs {
+  @include tablet {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+.filter__form-btn--submit {
+  margin-bottom: 25px;
+}
