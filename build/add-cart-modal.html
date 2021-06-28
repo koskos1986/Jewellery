@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Продаем ювелирные украшения">
+  <title>Jewellery - Корзина</title>
+  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="preload" href="fonts/Poppins-Medium.woff2" as="font">
+  <link rel="preload" href="fonts/CormorantGaramond-Bold.woff2" as="font">
+  <link rel="preload" href="fonts/CormorantGaramond-Italic.woff2" as="font">
+</head>
+<body>
+  <section class="modal">
+    <div class="modal__container">
+      <button class="modal__btn">
+        <svg width="14" height="14">
+          <use xlink:href="img/sprite-auto.svg#icon-close"></use>
+        </svg>
+      </button>
+      <h2 class="modal__heading">The item was added to your cart</h2>
+      <div class="modal__wrapper">
+        <div class="modal__img">
+          <picture></picture>
+        </div>
+        <div class="modal__product">
+          <h3 class="modal__product-heading">Gold Necklace</h3>
+          <p class="modal__product-text">$ 115</p>
+        </div>
+        <div class="modal__counter">
+          <button class="modal__counter-btn">
+            <svg width="14" height="14">
+              <use xlink:href="img/sprite-auto.svg#icon-plus"></use>
+            </svg>
+          </button>
+          <span>1</span>
+          <button class="modal__counter-btn">
+            <svg width="14" height="2">
+              <use xlink:href="img/sprite-auto.svg#icon-minus"></use>
+            </svg>
+          </button>
+        </div>
+        <div class="modal__subtotal">
+          <p class="modal__subtotal-text">You have 1 item in the cart</p>
+          <span>Cart subtotal:<span>$ 115</span></span>
+        </div>
+        <div class="modal__btn-wrapper">
+          <a href="catalog.html" class="modal__link">Continue shopping</a>
+          <a href="product-card.html" class="modal__link">Checkout</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+</html>

@@ -45,3 +45,49 @@
     }
   }
 }
+
+.btn__slider {
+  @include btn-reset;
+
+  height: 20px;
+  font-family: $font-family-primary;
+  font-size: $font-size;
+  font-weight: $medium;
+  line-height: $line-height;
+
+  &--prev {
+    order: 0;
+  }
+
+  &--next {
+    order: 2;
+  }
+
+  &--left {
+    position: absolute;
+    top: 177px;
+    left: $padding-desktop;
+  }
+
+  &--right {
+    position: absolute;
+    top: 177px;
+    right: $padding-desktop;
+  }
+}
+
+.btn__pagination {
+  @include btn-reset;
+
+  padding: 6px;
+  font-family: $font-family-primary;
+  font-weight: $medium;
+  font-size: $font-size;
+  line-height: $line-height;
+  text-align: center;
+  color: $text-gray;
+
+  &--active {
+    color: $text-black;
+  }
+}

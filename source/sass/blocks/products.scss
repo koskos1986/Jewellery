@@ -1,10 +1,12 @@
 .products {
   width: 100%;
+  overflow: hidden;
 }
 
 .products__container {
   @include margin-auto;
 
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -150,4 +152,35 @@
   display: flex;
   margin-left: auto;
   margin-right: auto;
+  justify-content: center;
+}
+
+.products__pagination .swiper-pagination-bullet {
+  padding: 6px;
+  cursor: pointer;
+  background-color: transparent;
+  border: 0ch;
+  font-family: $font-family-primary;
+  font-weight: $medium;
+  font-size: $font-size;
+  line-height: $line-height;
+  color: $text-gray;
+
+  @include tablet {
+    padding: 6px 7px;
+  }
+}
+
+.products__pagination .swiper-pagination-bullet:hover,
+.products__pagination .swiper-pagination-bullet:focus {
+  opacity: 0.5;
+}
+
+.products__pagination .swiper-pagination-bullet-active {
+  color: $text-black;
+}
+
+.products__pagination .swiper-pagination-bullet-active:hover,
+.products__pagination .swiper-pagination-bullet-active:focus {
+  opacity: 1;
 }
