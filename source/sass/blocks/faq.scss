@@ -139,9 +139,8 @@
   }
 }
 
-.faq__list-item--active p {
-  display: inline-block;
-  vertical-align: middle;
+.faq__list-item--active .faq__text {
+  display: block;
 }
 // проверить!!
 .faq__list-item--active .faq__btn-icon {

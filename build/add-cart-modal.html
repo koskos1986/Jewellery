@@ -12,7 +12,7 @@
   <link rel="preload" href="fonts/CormorantGaramond-Italic.woff2" as="font">
 </head>
 <body>
-  <section class="modal">
+  <section class="modal modal--add">
     <div class="modal__container">
       <button class="modal__btn">
         <svg width="14" height="14">
@@ -22,7 +22,9 @@
       <h2 class="modal__heading">The item was added to your cart</h2>
       <div class="modal__wrapper">
         <div class="modal__img">
-          <picture></picture>
+          <picture>
+            <img src="" alt="">
+          </picture>
         </div>
         <div class="modal__product">
           <h3 class="modal__product-heading">Gold Necklace</h3>
@@ -41,14 +43,14 @@
             </svg>
           </button>
         </div>
-        <div class="modal__subtotal">
-          <p class="modal__subtotal-text">You have 1 item in the cart</p>
-          <span>Cart subtotal:<span>$ 115</span></span>
-        </div>
-        <div class="modal__btn-wrapper">
-          <a href="catalog.html" class="modal__link">Continue shopping</a>
-          <a href="product-card.html" class="modal__link">Checkout</a>
-        </div>
+      </div>
+      <div class="modal__subtotal">
+        <p class="modal__subtotal-text">You have 1 item in the cart</p>
+        <span>Cart subtotal:<span>$ 115</span></span>
+      </div>
+      <div class="modal__btn-wrapper">
+        <a href="catalog.html" class="modal__link btn-primary--white">Continue shopping</a>
+        <a href="product-card.html" class="modal__link btn-primary">Checkout</a>
       </div>
     </div>
   </section>
