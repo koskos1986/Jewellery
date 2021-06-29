@@ -51,6 +51,26 @@
   padding-bottom: 50px;
   padding-left: 38px;
 
+  @include tablet {
+    padding: 43px 80px 18px 48px;
+  }
+
+  @include mobile {
+    padding: 16px 53px 7px 24px;
+  }
+
+  &--active {
+    padding-bottom: 41px;
+
+    @include tablet {
+      padding-bottom: 44px;
+    }
+
+    @include mobile {
+      padding-bottom: 19px;
+    }
+  }
+
   &:not(:first-child) {
     border-top: none;
   }
@@ -119,7 +139,7 @@
   }
 }
 
-.faq__list-item--active > p {
+.faq__list-item--active p {
   display: inline-block;
   vertical-align: middle;
 }
