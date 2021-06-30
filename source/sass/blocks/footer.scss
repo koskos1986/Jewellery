@@ -23,6 +23,7 @@
   }
 
   @include mobile {
+    flex-direction: column;
     padding-right: $padding-mobile;
     padding-left: $padding-mobile;
   }

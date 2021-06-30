@@ -41,6 +41,15 @@
   }
 }
 
+.modal__btn {
+  @include btn-reset;
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: -15px;
+  right: 1px;
+}
+
 .modal__heading {
   @include style-reset;
 
@@ -106,9 +115,14 @@
   }
 }
 
+.modal__counter-btn {
+  @include btn-reset;
+}
+
 .modal__counter span {
   font-size: 18px;
   line-height: 23px;
+  padding-right: 4px;
 
   @include mobile {
     font-size: 16px;
@@ -189,4 +203,14 @@
     font-size: 12px;
     line-height: 16px;
   }
+}
+
+.modal__btn-wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.modal__btn-wrapper a {
+  width: 46.4%;
 }

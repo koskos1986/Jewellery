@@ -128,7 +128,7 @@
 }
 
 .filter__wrapper {
-  display: flex;
+  display: none;
   width: 100%;
   flex-direction: column;
   margin-bottom: 26px;
@@ -144,6 +144,10 @@
   &--range {
     margin-bottom: 23px;
   }
+}
+
+.filter__wrapper--active {
+  display: flex;
 }
 
 .filter__wrapper label {
@@ -207,7 +211,7 @@
   background-color: $primary-brown;
 }
 
-.filter__item--active .btn__filter-icon {
+.filter__btn--active .filter__btn-icon {
   @include animation;
   transform: rotate(180deg);
 }

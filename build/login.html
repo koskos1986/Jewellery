@@ -10,10 +10,63 @@
   <link rel="preload" href="fonts/Poppins-Medium.woff2" as="font">
   <link rel="preload" href="fonts/CormorantGaramond-Bold.woff2" as="font">
   <link rel="preload" href="fonts/CormorantGaramond-Italic.woff2" as="font">
+  <!-- Pixel glass-->
+  <style>
+    HTML {
+      background-repeat: no-repeat;
+      background-position:  50% 0;
+      /* Mobile layout by default */
+      background-image: url("img/PP/320-Login-mobilePP.png");
+    }
+    /* Tablet */
+    @media ( min-width: 768px ) {
+      HTML {
+        /* Tablet layout */
+        background-image: url("img/PP/768-Log-in-tabletPP.png");
+      }
+    }
+    /* Desktop */
+    @media ( min-width: 1366px ) {
+      HTML {
+        /* Desktop layout */
+        background-image: url("img/PP/Log-in-desktopPP.png");
+      }
+    }
+  </style>
+  <link type="text/css" href="../node_modules/pixel-glass/styles.css" rel="stylesheet">
+  <script type="text/javascript" src="../node_modules/pixel-glass/script.js"></script>
 </head>
 <body>
   <header></header>
-  <main></main>
+  <main>
+    <h1 class="visually-hidden">Login</h1>
+    <section class="login">
+      <div class="login__top">
+        <button class="login__btn">
+          <svg width="14" heigth="14">
+            <use xlink:href="img/sprite-auto.svg#icon-close"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="login__container">
+        <h2 class="login__heading">Log In</h2>
+        <form class="login__form" action="https://echo.htmlacademy.ru" method="get">
+          <label>
+            <input type="email" placeholder="Your E-mail" required="">
+          </label>
+          <label>
+            <input id="password" name="password" type="password" placeholder="Password" required="">
+          </label>
+          <a class="login__link" href="#">Forgot your password?</a>
+          <button class="login__submit btn-primary" type="submit">Log In</button>
+        </form>
+        <div class="login__registration">
+          <p class="login__text">Don’t have an account?</p>
+          <a href="#" class="login__registration-link">Sign up</a>
+        </div>
+      </div>
+    </section>
+  </main>
   <footer></footer>
 </body>
 </html>

@@ -55,9 +55,14 @@
 }
 
 .login__btn {
+  @include btn-reset;
+
   position: absolute;
   top: 20px;
   right: 20px;
+  display: flex;
+  width: 15px;
+  height: 15px;
 }
 
 .login__container {
@@ -99,8 +104,21 @@
 .login__form input {
   border-color: $text-black;
   color: $text-black;
-  padding-right: 1px;
   margin-bottom: 29px;
+  position: relative;
+  width: 100%;
+  border: 0;
+  border-bottom: 1px solid $text-black;
+  border-radius: 0;
+  font-size: 14px;
+  line-height: 17px;
+  background-color: transparent;
+  outline-offset: 3px;
+  padding: 8px 103px 10px 1px;
+
+  &::placeholder {
+    color: $text-gray;
+  }
 
   @include mobile {
     margin-bottom: 24px;

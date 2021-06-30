@@ -10,6 +10,31 @@
   <link rel="preload" href="fonts/Poppins-Medium.woff2" as="font">
   <link rel="preload" href="fonts/CormorantGaramond-Bold.woff2" as="font">
   <link rel="preload" href="fonts/CormorantGaramond-Italic.woff2" as="font">
+  <!-- Pixel glass-->
+  <style>
+    HTML {
+      background-repeat: no-repeat;
+      background-position:  50% 0;
+      /* Mobile layout by default */
+      background-image: url("img/PP/320-Catalog-mobilePP.png");
+    }
+    /* Tablet */
+    @media ( min-width: 768px ) {
+      HTML {
+        /* Tablet layout */
+        background-image: url("img/PP/768-Catalog-tabletPP.png");
+      }
+    }
+    /* Desktop */
+    @media ( min-width: 1366px ) {
+      HTML {
+        /* Desktop layout */
+        background-image: url("img/PP/Catalog-desktopPP.png");
+      }
+    }
+  </style>
+  <link type="text/css" href="../node_modules/pixel-glass/styles.css" rel="stylesheet">
+  <script type="text/javascript" src="../node_modules/pixel-glass/script.js"></script>
 </head>
 <body>
   <header class="header">
@@ -102,8 +127,8 @@
                 <use xlink:href="img/sprite-auto.svg#icon-close-mobile"></use>
               </svg>
             </button>
-            <ul class="filter__list">
-              <li class="filter__item">
+            <ul class="filter__list accordion">
+              <li class="filter__item accordion__heading">
                 <h3 class="filter__heading">Product</h3>
                 <button class="filter__btn" type="button">
                   <svg class="filter__btn-icon" width="17" height="9">
@@ -131,7 +156,11 @@
               </li>
               <li class="filter__item">
                 <h3 class="filter__heading">Material</h3>
-                <button class="filter__btn" type="button"></button>
+                <button class="filter__btn" type="button">
+                  <svg class="filter__btn-icon" width="17" height="9">
+                    <use xlink:href="img/sprite-auto.svg#icon-arrow-down"></use>
+                  </svg>
+                </button>
                 <div class="filter__wrapper">
                   <label>
                     <input type="checkbox" checked="">
@@ -145,7 +174,11 @@
               </li>
               <li class="filter__item">
                 <h3 class="filter__heading">Collection</h3>
-                <button class="filter__btn" type="button"></button>
+                <button class="filter__btn" type="button">
+                  <svg class="filter__btn-icon" width="17" height="9">
+                    <use xlink:href="img/sprite-auto.svg#icon-arrow-down"></use>
+                  </svg>
+                </button>
                 <div class="filter__wrapper">
                   <label>
                     <input type="checkbox" checked="">
@@ -159,7 +192,11 @@
               </li>
               <li class="filter__item">
                 <h3 class="filter__heading">Price</h3>
-                <button class="filter__btn" type="button"></button>
+                <button class="filter__btn" type="button">
+                  <svg class="filter__btn-icon" width="17" height="9">
+                    <use xlink:href="img/sprite-auto.svg#icon-arrow-down"></use>
+                  </svg>
+                </button>
               </li>
               <div class="filter__wrapper filter__wrapper--range">
               </div>
@@ -465,5 +502,6 @@
       </div>
     </div>
   </footer>
+  <script src="js/components/filter.js"></script>
 </body>
 </html>

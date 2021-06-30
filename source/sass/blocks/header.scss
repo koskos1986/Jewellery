@@ -17,18 +17,22 @@
   }
 }
 
+.btn--img path {
+  stroke: $white;
+}
+
 .header--open + main,
-.header--open + footer,
+.header--open ~ footer,
 .header--nojs + main,
-.header--nojs + footer {
+.header--nojs ~ footer {
   @include tablet {
     display: none;
   }
 }
 
 .header--open .header__logo-img,
-.header--open .btn__img {
-  fill: $white;
+.header--open .btn--img {
+  stroke: $white;
 }
 
 .header__container {
@@ -45,6 +49,8 @@
   padding-left: $padding-desktop;
 
   @include tablet {
+    flex-direction: row;
+    flex-wrap: wrap;
     padding-right: $padding-tablet;
     padding-left: $padding-tablet;
   }

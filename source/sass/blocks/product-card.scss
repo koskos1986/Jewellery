@@ -21,6 +21,7 @@
   }
 
   @include mobile {
+    flex-direction: column;
     padding-top: 35px;
     padding-right: $padding-mobile;
     padding-bottom: 35px;
