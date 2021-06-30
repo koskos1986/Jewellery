@@ -13,7 +13,35 @@
 </head>
 <body>
   <header></header>
-  <main></main>
+  <main>
+    <h1 class="visually-hidden">Login</h1>
+    <section class="login">
+      <div class="login__top">
+        <button class="login__btn">
+          <svg width="14" heigth="14">
+            <use xlink:href="img/sprite-auto.svg#icon-close"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="login__container">
+        <h2 class="login__heading">Log In</h2>
+        <form class="login__form" action="https://echo.htmlacademy.ru" method="get">
+          <label>
+            <input type="email" placeholder="Your E-mail" required>
+          </label>
+          <label>
+            <input id="password" name="password" type="password" placeholder="Password" required>
+          </label>
+          <a class="login__link" href="#">Forgot your password?</a>
+          <button class="login__submit btn-primary" type="submit">Log In</button>
+        </form>
+      </div>
+      <div class="login__registration">
+        <p class="login__text">Don’t have an account?</p>
+        <a href="#" class="login__registration-link">Sign up</a>
+      </div>
+    </section>
+  </main>
   <footer></footer>
 </body>
 </html>
