@@ -197,9 +197,30 @@
                     <use xlink:href="img/sprite-auto.svg#icon-arrow-down"></use>
                   </svg>
                 </button>
+
+                <div class="catalog__filter-range filter__wrapper">
+                  <div class="filter__range-controls">
+                    <div class="filter__range-scale">
+                      <div class="filter__range-bar"></div>
+                    </div>
+                    <div class="filter__range-toggle filter__range-toggle--min"></div>
+                    <div class="filter__range-toggle filter__range-toggle--max"></div>
+                  </div>
+                  <div class="filter__range-price">
+                    <div class="filter__price-wrapper">
+                      <label class="filter__price filter__price--min">$
+                        <input type="text" name="min-price" value="55">
+                      </label>
+                    </div>
+                    <div class="filter__price-wrapper">
+                      <label class="filter__price filter__price--max">$
+                        <input type="text" name="max-price" value="155">
+                      </label>
+                    </div>
+                  </div>
+                </div>
+
               </li>
-              <div class="filter__wrapper filter__wrapper--range">
-              </div>
             </ul>
             <button class="filter__form-btn btn btn-primary filter__form-btn--submit" type="submit">Apply</button>
             <button class="filter__form-btn btn btn-primary btn-primary--white" type="button">Clear all</button>

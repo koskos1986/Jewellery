@@ -65,4 +65,17 @@
   text-align: center;
   color: $text-black;
   border-bottom: 1px solid $primary-brown;
+
+  &:hover,
+  &:focus {
+    @include animation;
+
+    color: $primary-brown;
+    border-color: $text-black;
+  }
+
+  &:active {
+    transition: all .2s ease;
+    color: $text-black;;
+  }
 }

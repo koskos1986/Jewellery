@@ -252,3 +252,102 @@
 .filter__form-btn--submit {
   margin-bottom: 25px;
 }
+
+// price!!!
+
+.filter__range-controls {
+  position: relative;
+  padding-bottom: 13px;
+
+  @include tablet {
+    padding-bottom: 15px;
+  }
+}
+
+.filter__range-scale {
+  height: 1px;
+  background-color: $bg-gray;
+}
+
+.filter__range-bar {
+  width: 90px;
+  height: 1px;
+  margin-left: 60px;
+  background-color: $primary-brown;
+
+  @include tablet {
+    width: 163px;
+  }
+
+  @include mobile {
+    width: 123px;
+  }
+}
+
+.catalog__range-toggle {
+  position: absolute;
+  top: -7px;
+  width: 15px;
+  height: 15px;
+  background-color: $primary-brown;
+  border-radius: 50%;
+  cursor: pointer;
+
+  &--min {
+    left: 45px;
+  }
+
+  &--max {
+    right: 33px;
+
+    @include tablet {
+      right: 64px;
+    }
+
+    @include mobile {
+      right: 48px;
+    }
+  }
+
+  @include tablet {
+    top: -9px;
+    width: 18px;
+    height: 18px;
+  }
+}
+
+.filter__range-price {
+  display: flex;
+  padding-left: 37px;
+}
+
+.filter__price-wrapper label,
+.filter__price input {
+  font-weight: $medium;
+  font-size: 14px;
+  line-height: 18.2px;
+
+  @include tablet {
+    font-size: $font-size;
+    line-height: $line-height;
+  }
+}
+
+.filter__price-wrapper:not(:last-child) {
+  margin-right: auto;
+
+  @include tablet {
+    margin-right: 110px;
+  }
+
+  @include mobile {
+    margin-right: 72px;
+  }
+}
+
+.filter__price input {
+  max-width: 50px;
+  padding: 0;
+  border: none;
+  background: none;
+}

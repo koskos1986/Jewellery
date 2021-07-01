@@ -193,12 +193,24 @@
 }
 
 .footer__social-link {
-
   display: block;
   font-size: $font-size;
   font-weight: $medium;
   line-height: $line-height;
   color: $white;
+
+  &:hover,
+  &:active {
+    @include animation;
+
+    opacity: 0.7;
+  }
+
+  &:active {
+    @include animation;
+
+    opacity: 0.3;
+  }
 }
 
 .footer__social-link svg {

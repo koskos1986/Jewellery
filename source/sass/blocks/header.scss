@@ -103,3 +103,16 @@
 .header__btn svg {
   pointer-events: none;
 }
+
+.header__logo-img:hover {
+  @include animation;
+
+  color: $text-black;
+}
+
+.header__logo-img:active {
+  @include animation;
+
+  color: $text-black;
+  opacity: 0.5;
+}

@@ -15,6 +15,7 @@
 
 .btn-primary {
   width: 100%;
+  height: 68px;
   padding-top: 28px;
   padding-bottom: 28px;
   background-color: $primary-brown;
@@ -55,6 +56,12 @@
   font-weight: $medium;
   line-height: $line-height;
 
+  &:hover,
+  &:focus {
+    @include animation;
+    opacity: 0.7;
+  }
+
   &--prev {
     order: 0;
   }
@@ -89,5 +96,10 @@
 
   &--active {
     color: $text-black;
+  }
+
+  &:hover,
+  &:focus {
+    filter: grayscale(1);
   }
 }
