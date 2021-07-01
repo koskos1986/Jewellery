@@ -17,9 +17,9 @@
   }
 }
 
-.btn--img path {
-  stroke: $white;
-}
+// .btn--img path {
+  // stroke: $white;
+// }
 
 .header--open + main,
 .header--open ~ footer,
@@ -30,10 +30,10 @@
   }
 }
 
-.header--open .header__logo-img,
-.header--open .btn--img {
-  stroke: $white;
-}
+ .header--open .header__logo-img,
+ .header--open .btn--img {
+   color: $white;
+ }
 
 .header__container {
   @include margin-auto;

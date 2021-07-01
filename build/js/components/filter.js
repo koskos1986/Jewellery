@@ -7,15 +7,9 @@ for ( const acc of accordions ) {
     const body = this.nextElementSibling;
     body.classList.toggle('filter__wrapper--active');
 
-    const btn = document.querySelectorAll('.filter__btn');
+    const btn = document.querySelector('.filter__btn');
     btn.classList.toggle('filter__btn--active');
     // const indication = this.querySelector('.state-indication');
     // if ( indication.classList.contains('plus') ) {
-      // indication.classList.remove('plus');
-      // indication.classList.add('minus');
-    // } else if ( indication.classList.contains('minus') ) {
-      // indication.classList.remove('minus');
-      // indication.classList.add('plus');
-    // }
   } );
 }

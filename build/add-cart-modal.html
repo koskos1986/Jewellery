@@ -48,7 +48,14 @@
       <div class="modal__wrapper">
         <div class="modal__img">
           <picture>
-            <img src="" alt="">
+            <!-- 1x: 70px; 2x: 140px -->
+            <source media="(max-width: 767px)" type="image/webp" srcset="img/jpeg/catalog/necklace-detail-small-mobile@1x.webp, img/jpeg/catalog/necklace-detail-small-mobile@2x.webp 2x">
+            <!-- 1x: 88px; 2x: 176px -->
+            <source media="(max-width: 1023px)" type="image/webp" srcset="img/jpeg/catalog/necklace-detail-small-tablet@1x.webp, img/jpeg/catalog/necklace-detail-small-desktop@2x.webp 2x">
+            <!-- 1x: 84px; 2x: 168px -->
+            <source type="image/webp" srcset="img/jpeg/catalog/necklace-detail-small-desktop@1x.webp, img/jpeg/catalog/necklace-detail-small-desktop@2x.webp 2x">
+            <!-- 1x: 84px; 2x: 168px -->
+            <img width="84" height="79" src="img/jpeg/catalog/necklace-detail-small-desktop@1x.jpg" srcset="img/jpeg/catalog/necklace-detail-small-desktop@2x.jpg 2x" alt="Small necklace" loading="lazy">
           </picture>
         </div>
         <div class="modal__product">

@@ -157,10 +157,18 @@
 }
 
 .footer__nav-link {
+  display: block;
   font-size: $font-size;
   font-weight: $medium;
   line-height: $line-height;
   color: $white;
+
+  &:hover,
+  &:active {
+    @include animation;
+
+    opacity: 0.7;
+  }
 }
 
 
