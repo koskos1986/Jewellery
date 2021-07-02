@@ -14,6 +14,4 @@
     }
 
   };
-
-  document.addEventListener('click', menuToggle);
 })();
