@@ -18,7 +18,7 @@
 }
 
 // .btn--img path {
-  // stroke: $white;
+// stroke: $white;
 // }
 
 .header--open + main,
@@ -30,10 +30,10 @@
   }
 }
 
- .header--open .header__logo-img,
- .header--open .btn--img {
-   color: $white;
- }
+.header--open .header__logo-img,
+.header--open .btn--img {
+  color: $white;
+}
 
 .header__container {
   @include margin-auto;
@@ -62,8 +62,8 @@
 }
 
 .header__container-bottom {
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
   border-top: 1px solid $gray-line;
 
   @include tablet {

@@ -36,7 +36,7 @@
   <link type="text/css" href="../node_modules/pixel-glass/styles.css" rel="stylesheet">
   <script type="text/javascript" src="../node_modules/pixel-glass/script.js"></script>
 </head>
-<body>
+<body class="page js-page">
   <header class="header">
     <div class="header__container header__container--top">
       <button class="header__btn btn btn--burger js-btn-menu" type="button" aria-label="Open or close a menu">
@@ -400,6 +400,7 @@
   <div class="overlay js-overlay">
     <div class="modal modal--add js-modal-add">
       <section class="modal__container">
+        <a class="visually-hidden" id="focus-element" href="#"></a>
         <button class="modal__btn js-modal-close">
           <svg width="14" height="14">
             <use xlink:href="img/sprite-auto.svg#icon-close"></use>
@@ -478,10 +479,6 @@
     </section>
   </div>
   <script src="js/vendor.js"></script>
-  <script src="js/components/swiper.js"></script>
-  <script src="js/components/product-card-tabs.js"></script>
-  <script src="js/components/add-modal.js"></script>
-  <script src="js/components/login.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>

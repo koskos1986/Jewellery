@@ -10,7 +10,7 @@
   align-items: center;
   width: 100%;
   max-width: $max-width;
-  padding-top: 70px;
+  padding-top: 50px;
   padding-right: $padding-desktop;
   padding-bottom: 60px;
   padding-left: $padding-desktop;
@@ -34,12 +34,12 @@
   @include style-reset;
   @include heading;
 
-  margin-bottom: 35px;
+  margin-bottom: 19px;
 }
 
 .blog__link {
   @include style-reset;
   @include link;
 
-  margin-bottom: 60px;
+  margin-bottom: 62px;
 }

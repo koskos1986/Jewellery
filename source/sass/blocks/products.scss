@@ -12,7 +12,7 @@
   align-items: center;
   width: 100%;
   max-width: $max-width;
-  padding-top: 130px;
+  padding-top: 121px;
   padding-right: $padding-desktop;
   padding-bottom: 60px;
   padding-left: $padding-desktop;
@@ -36,7 +36,7 @@
   @include style-reset;
   @include heading;
 
-  margin-bottom: 35px;
+  margin-bottom: 23px;
 }
 
 .products__link-heading {
@@ -100,7 +100,7 @@
 
 .products__link {
   display: flex;
-  margin-bottom: 24px;
+  margin-bottom: 20px;
   line-height: 0;
 
   &:hover,

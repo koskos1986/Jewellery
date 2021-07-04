@@ -50,6 +50,17 @@
 
 .filter__btn-close {
   display: none;
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  top: -18px;
+  right: -16px;
+}
+
+.filter--active .filter__btn-close {
+  @include tablet {
+    display: block;
+  }
 }
 
 .filter__list {

@@ -2,16 +2,12 @@
 
 (function () {
   const loginModalWindow = () => {
-    const pageClass = {
-      PAGE_LOCKED: 'page--locked',
-      MODAL_ACTIVE: 'modal--active',
-    };
 
     const KeyButton = {
       ESCAPE: 'Escape',
     };
 
-    const page = document.getElementsByTagName('body');
+    const page = document.querySelector('.js-page');
     const openLoginBtn = document.querySelectorAll('.js-login');
     const openLogin = document.querySelector('.js-modal-login');
     const formLogin = document.querySelector('.js-form-login');
@@ -40,8 +36,8 @@
     };
 
     const closeLoginHandler = () => {
-      openLogin.classList.remove(pageClass.MODAL_ACTIVE);
-      page.classList.remove(pageClass.PAGE_LOCKED);
+      openLogin.classList.remove('modal--active');
+      page.classList.remove('page--locked');
       closeLogin.removeEventListener('click', closeLoginHandler);
       openLogin.removeEventListener('click', openLoginHandler);
       document.removeEventListener('keydown', onEscModalClose);
@@ -49,8 +45,8 @@
 
     const openLoginHandler = (evt) => {
       evt.preventDefault();
-      page.classList.add(pageClass.PAGE_LOCKED);
-      openLogin.classList.add(pageClass.MODAL_ACTIVE);
+      page.classList.add('page--locked');
+      openLogin.classList.add('modal--active');
       if (isStorageSupport && storageEmail) {
         formLogin.email.value = storageEmail;
         formLogin.password.focus();
@@ -65,9 +61,9 @@
     for (let btn of openLoginBtn) {
       btn.addEventListener('click', openLoginHandler);
     }
+  };
 
   loginModalWindow();
-  }
 })();
 
 // export default loginModalWindow;

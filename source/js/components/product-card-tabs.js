@@ -1,7 +1,7 @@
 'use strict';
 
 (function () {
-  const productCardInput = () => {
+  const productCardTabs = () => {
     const pageClass = {
       DESCRIPTION_ACTIVE: 'product-card__description--active',
     };
@@ -22,7 +22,7 @@
     }
   };
 
-  productCardInput();
+  productCardTabs();
 })();
 
-// export default productCardInput;
+export default productCardTabs;

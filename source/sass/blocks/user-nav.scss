@@ -13,18 +13,18 @@
 }
 
 .user-nav__item:first-child {
-  margin-right: 15px;
+  margin-right: 28px;
 }
 
 .user-nav__link {
   display: block;
-  padding: 15px 10px;
+  padding: 12px 3px;
   font-size: 14px;
   font-weight: $medium;
   line-height: $line-height;
   color: $text-black;
 
-  &:hover,
+  &:active,
   &:hover {
     @include animation;
 

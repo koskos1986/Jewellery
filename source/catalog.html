@@ -36,7 +36,7 @@
   <link type="text/css" href="../node_modules/pixel-glass/styles.css" rel="stylesheet">
   <script type="text/javascript" src="../node_modules/pixel-glass/script.js"></script>
 </head>
-<body>
+<body class="page js-page">
   <header class="header">
     <div class="header__container header__container--top">
       <button class="header__btn btn btn--burger js-btn-menu" type="button" aria-label="Open or close a menu">
@@ -61,7 +61,7 @@
       </a>
       <ul class="user-nav">
         <li class="user-nav__item user-nav__item--login">
-          <a href="login.html" class="user-nav__link">Login</a>
+          <a href="login.html" class="user-nav__link js-login">Login</a>
         </li>
         <li class="user-nav__item user-nav__item--cart">
           <a href="#" class="user-nav__link">
@@ -119,10 +119,10 @@
     </section>
     <section class="catalog">
       <div class="catalog__container">
-        <button class="catalog__btn btn-primary">Filter</button>
-        <aside class="catalog__filter filter">
-          <form action="" class="filter__form">
-            <button class="filter__btn-close">
+        <button class="catalog__btn btn-primary js-btn-filter-open">Filter</button>
+        <aside class="catalog__filter filter js-filter">
+          <form action="" class="filter__form js-filter-form">
+            <button class="filter__btn-close btn js-btn-filter-close" type="button">
               <svg width="32" height="32">
                 <use xlink:href="img/sprite-auto.svg#icon-close-mobile"></use>
               </svg>
@@ -130,7 +130,7 @@
             <ul class="filter__list accordion">
               <li class="filter__item accordion__heading">
                 <h3 class="filter__heading">Product</h3>
-                <button class="filter__btn" type="button">
+                <button class="filter__btn js-btn-filter" type="button">
                   <svg class="filter__btn-icon" width="17" height="9">
                     <use xlink:href="img/sprite-auto.svg#icon-arrow-down"></use>
                   </svg>
@@ -156,7 +156,7 @@
               </li>
               <li class="filter__item">
                 <h3 class="filter__heading">Material</h3>
-                <button class="filter__btn" type="button">
+                <button class="filter__btn js-btn-filter" type="button">
                   <svg class="filter__btn-icon" width="17" height="9">
                     <use xlink:href="img/sprite-auto.svg#icon-arrow-down"></use>
                   </svg>
@@ -174,7 +174,7 @@
               </li>
               <li class="filter__item">
                 <h3 class="filter__heading">Collection</h3>
-                <button class="filter__btn" type="button">
+                <button class="filter__btn js-btn-filter" type="button">
                   <svg class="filter__btn-icon" width="17" height="9">
                     <use xlink:href="img/sprite-auto.svg#icon-arrow-down"></use>
                   </svg>
@@ -192,7 +192,7 @@
               </li>
               <li class="filter__item">
                 <h3 class="filter__heading">Price</h3>
-                <button class="filter__btn" type="button">
+                <button class="filter__btn js-btn-filter" type="button">
                   <svg class="filter__btn-icon" width="17" height="9">
                     <use xlink:href="img/sprite-auto.svg#icon-arrow-down"></use>
                   </svg>
@@ -527,7 +527,7 @@
   <div class="modal modal--login js-modal-login">
     <section class="login">
       <div class="login__top">
-        <button class="login__btn">
+        <button class="login__btn js-login-close">
           <svg width="14" heigth="14">
             <use xlink:href="img/sprite-auto.svg#icon-close"></use>
           </svg>
@@ -535,9 +535,9 @@
       </div>
       <div class="login__container">
         <h2 class="login__heading">Log In</h2>
-        <form class="login__form" action="https://echo.htmlacademy.ru" method="get">
+        <form class="login__form js-form-login" action="https://echo.htmlacademy.ru" method="get">
           <label>
-            <input type="email" placeholder="Your E-mail" required>
+            <input id="email" name="email" type="email" placeholder="Your E-mail" required>
           </label>
           <label>
             <input id="password" name="password" type="password" placeholder="Password" required>
@@ -553,6 +553,7 @@
     </section>
   </div>
 
-  <script src="js/components/filter.js"></script>
+  <script src="js/vendor.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>

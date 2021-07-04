@@ -7,7 +7,7 @@
       ESCAPE: 'Escape',
     };
 
-    const page = document.getElementsByTagName('body');
+    const page = document.querySelector('.js-page');
     const openLoginBtn = document.querySelectorAll('.js-login');
     const openLogin = document.querySelector('.js-modal-login');
     const formLogin = document.querySelector('.js-form-login');
@@ -61,9 +61,9 @@
     for (let btn of openLoginBtn) {
       btn.addEventListener('click', openLoginHandler);
     }
+  };
 
   loginModalWindow();
-  }
 })();
 
 // export default loginModalWindow;

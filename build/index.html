@@ -36,7 +36,7 @@
     <link type="text/css" href="../node_modules/pixel-glass/styles.css" rel="stylesheet">
     <script type="text/javascript" src="../node_modules/pixel-glass/script.js"></script>
 </head>
-<body>
+<body class="page js-page">
 
   <header class="header header--nojs">
     <div class="header__container header__container--top">
@@ -62,7 +62,7 @@
       </a>
       <ul class="user-nav">
         <li class="user-nav__item user-nav__item--login">
-          <a href="login.html" class="user-nav__link">Login</a>
+          <a href="login.html" class="user-nav__link js-login">Login</a>
         </li>
         <li class="user-nav__item user-nav__item--cart">
           <a href="#" class="user-nav__link">
@@ -595,9 +595,37 @@
       </div>
     </div>
   </footer>
+
+  <div class="modal modal--login js-modal-login">
+    <section class="login">
+      <div class="login__top">
+        <button class="login__btn js-login-close">
+          <svg width="14" heigth="14">
+            <use xlink:href="img/sprite-auto.svg#icon-close"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="login__container">
+        <h2 class="login__heading">Log In</h2>
+        <form class="login__form js-form-login" action="https://echo.htmlacademy.ru" method="get">
+          <label>
+            <input id="email" name="email" type="email" placeholder="Your E-mail" required="">
+          </label>
+          <label>
+            <input id="password" name="password" type="password" placeholder="Password" required="">
+          </label>
+          <a class="login__link" href="#">Forgot your password?</a>
+          <button class="login__submit btn-primary" type="submit">Log In</button>
+        </form>
+        <div class="login__registration">
+          <p class="login__text">Don’t have an account?</p>
+          <a href="#" class="login__registration-link">Sign up</a>
+        </div>
+      </div>
+    </section>
+  </div>
+
   <script src="js/vendor.js"></script>
-  <script src="js/components/swiper.js"></script>
   <script src="js/main.js"></script>
-  <script src="js/accordion.js"></script>
 </body>
 </html>

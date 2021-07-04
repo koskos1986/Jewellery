@@ -36,7 +36,7 @@
     <link type="text/css" href="../node_modules/pixel-glass/styles.css" rel="stylesheet">
     <script type="text/javascript" src="../node_modules/pixel-glass/script.js"></script>
 </head>
-<body>
+<body class="page js-page">
 
   <header class="header header--nojs">
     <div class="header__container header__container--top">
@@ -62,7 +62,7 @@
       </a>
       <ul class="user-nav">
         <li class="user-nav__item user-nav__item--login">
-          <a href="login.html" class="user-nav__link">Login</a>
+          <a href="login.html" class="user-nav__link js-login">Login</a>
         </li>
         <li class="user-nav__item user-nav__item--cart">
           <a href="#" class="user-nav__link">
@@ -599,7 +599,7 @@
   <div class="modal modal--login js-modal-login">
     <section class="login">
       <div class="login__top">
-        <button class="login__btn">
+        <button class="login__btn js-login-close">
           <svg width="14" heigth="14">
             <use xlink:href="img/sprite-auto.svg#icon-close"></use>
           </svg>
@@ -607,9 +607,9 @@
       </div>
       <div class="login__container">
         <h2 class="login__heading">Log In</h2>
-        <form class="login__form" action="https://echo.htmlacademy.ru" method="get">
+        <form class="login__form js-form-login" action="https://echo.htmlacademy.ru" method="get">
           <label>
-            <input type="email" placeholder="Your E-mail" required>
+            <input id="email" name="email" type="email" placeholder="Your E-mail" required>
           </label>
           <label>
             <input id="password" name="password" type="password" placeholder="Password" required>
@@ -626,8 +626,6 @@
   </div>
 
   <script src="js/vendor.js"></script>
-  <script src="js/components/swiper.js"></script>
-  <script src="js/accordion.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>

@@ -34,6 +34,8 @@
 .lead__heading {
   @include style-reset;
 
+  margin-top: 2px;
+
   font-family: $font-family-secondary;
   font-size: 45px;
   font-weight: $bold;
@@ -52,6 +54,7 @@
 .lead__text {
   @include style-reset;
 
+  margin-top: -8px;
   font-family: $font-family-secondary;
   font-size: 38px;
   font-style: italic;

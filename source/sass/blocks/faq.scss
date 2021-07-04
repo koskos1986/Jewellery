@@ -10,7 +10,7 @@
   align-items: center;
   width: 100%;
   max-width: $max-width;
-  padding-top: 70px;
+  padding-top: 60px;
   padding-right: 198px;
   padding-bottom: 60px;
   padding-left: 198px;
@@ -34,7 +34,7 @@
   @include style-reset;
   @include heading;
 
-  margin-bottom: 60px;
+  margin-bottom: 47px;
 }
 
 .faq__list {
@@ -46,10 +46,10 @@
 .faq__list-item {
   position: relative;
   border: 1px solid $primary-brown;
-  padding-top: 50px;
+  padding-top: 43px;
   padding-right: 392px;
   padding-bottom: 50px;
-  padding-left: 38px;
+  padding-left: 44px;
 
   @include tablet {
     padding: 43px 80px 18px 48px;
@@ -100,7 +100,8 @@
   @include style-reset;
   display: none;
 
-  margin-left: 4px;
+  margin-bottom: 22px;
+  margin-left: 6px;
 
   @include tablet {
     margin-left: 0;
@@ -139,11 +140,27 @@
   }
 }
 
-.faq__list-item--active .faq__text {
+// .faq__list-item--active .faq__text {
+// display: block;
+// }
+// проверить!!
+// .faq__list-item--active .faq__btn-icon {
+// @include animation;
+// transform: rotate(180deg);
+// }
+
+.faq__list-item > .faq__text {
+  display: none;
+}
+
+.faq__list-item.faq__list-item--active > .faq__text {
   display: block;
 }
-// проверить!!
-.faq__list-item--active .faq__btn-icon {
-  @include animation;
-  transform: rotate(180deg);
+
+.js-accordion--nojs .faq__text {
+  display: block;
 }
+
+// .faq__list-item--active .faq__text {
+// display: block;
+// }
