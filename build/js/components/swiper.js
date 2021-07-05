@@ -45,8 +45,8 @@ const swiper = () => {
         },
       },
       navigation: {
-        nextEl: '.btn__slider--right',
-        prevEl: '.btn__slider--left',
+        nextEl: '.btn-slider--right',
+        prevEl: '.btn-slider--left',
       },
     });
     swiper.init();

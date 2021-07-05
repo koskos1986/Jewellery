@@ -140,20 +140,17 @@
   }
 }
 
-// .faq__list-item--active .faq__text {
-// display: block;
-// }
 // проверить!!
-// .faq__list-item--active .faq__btn-icon {
-// @include animation;
-// transform: rotate(180deg);
-// }
-
-.faq__list-item > .faq__text {
-  display: none;
+.faq__list-item--active .faq__btn-icon {
+  @include animation;
+  transform: rotate(180deg);
 }
 
-.faq__list-item.faq__list-item--active > .faq__text {
+// .faq__list-item .faq__text {
+  // display: none;
+// }
+
+.faq__list-item--active .faq__text {
   display: block;
 }
 

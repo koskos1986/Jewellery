@@ -3,7 +3,7 @@
 (function () {
   const productCardTabs = () => {
     const pageClass = {
-      DESCRIPTION_ACTIVE: 'product-card__description--active',
+      DESCRIPTION_ACTIVE: 'product-card__description-active',
     };
 
     const descriptionToggle = document.querySelector('#description');

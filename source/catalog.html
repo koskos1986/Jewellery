@@ -48,7 +48,7 @@
         <label class="form__label">
           <input type="search" name="search" placeholder="Type here to search">
         </label>
-        <button class="btn btn__search" type="submit" aria-label="Search">
+        <button class="btn btn-search" type="submit" aria-label="Search">
           <svg class="btn btn--img" width="14" height="14">
             <use xlink:href="img/sprite-auto.svg#icon-search"></use>
           </svg>
@@ -118,17 +118,18 @@
       <p class="lead__text">Discover picks of fashion's finest trends in our jewellery catalog</p>
     </section>
     <section class="catalog">
+      <h2 class="catalog__heading visually-hidden">Catalog</h2>
       <div class="catalog__container">
         <button class="catalog__btn btn-primary js-btn-filter-open">Filter</button>
         <aside class="catalog__filter filter js-filter">
-          <form action="" class="filter__form js-filter-form">
+          <form action="https://echo.htmlacademy.ru" class="filter__form js-filter-form" method="GET">
             <button class="filter__btn-close btn js-btn-filter-close" type="button">
               <svg width="32" height="32">
                 <use xlink:href="img/sprite-auto.svg#icon-close-mobile"></use>
               </svg>
             </button>
             <ul class="filter__list accordion">
-              <li class="filter__item accordion__heading">
+              <li class="filter__item accordion__heading" data-class="filter__item">
                 <h3 class="filter__heading">Product</h3>
                 <button class="filter__btn js-btn-filter" type="button">
                   <svg class="filter__btn-icon" width="17" height="9">
@@ -154,7 +155,7 @@
                   </label>
                 </div>
               </li>
-              <li class="filter__item">
+              <li class="filter__item" data-class="filter__item">
                 <h3 class="filter__heading">Material</h3>
                 <button class="filter__btn js-btn-filter" type="button">
                   <svg class="filter__btn-icon" width="17" height="9">
@@ -172,7 +173,7 @@
                   </label>
                 </div>
               </li>
-              <li class="filter__item">
+              <li class="filter__item" data-class="filter__item">
                 <h3 class="filter__heading">Collection</h3>
                 <button class="filter__btn js-btn-filter" type="button">
                   <svg class="filter__btn-icon" width="17" height="9">
@@ -190,7 +191,7 @@
                   </label>
                 </div>
               </li>
-              <li class="filter__item">
+              <li class="filter__item" data-class="filter__item">
                 <h3 class="filter__heading">Price</h3>
                 <button class="filter__btn js-btn-filter" type="button">
                   <svg class="filter__btn-icon" width="17" height="9">
@@ -223,7 +224,7 @@
               </li>
             </ul>
             <button class="filter__form-btn btn btn-primary filter__form-btn--submit" type="submit">Apply</button>
-            <button class="filter__form-btn btn btn-primary btn-primary--white" type="button">Clear all</button>
+            <button class="filter__form-btn btn btn-primary btn-primary--white" type="reset">Clear all</button>
           </form>
         </aside>
         <div class="catalog__wrapper">
@@ -234,7 +235,7 @@
                 <!-- 1x: 130px; 2x: 260px -->
                 <source media="(max-width: 767px)" type="image/webp" srcset="img/jpeg/catalog/double-pearl-earrings-mobile@1x.webp, img/jpeg/catalog/double-pearl-earrings-mobile@2x.webp 2x">
                 <!-- 1x: 206px; 2x: 412px -->
-                <source media="(max-width: 1023px)" type="image/webp" srcset="img/jpeg/catalog/double-pearl-earrings-tablet@1x.webp img/jpeg/catalog/double-pearl-earrings-tablet@2x.webp 2x">
+                <source media="(max-width: 1023px)" type="image/webp" srcset="img/jpeg/catalog/double-pearl-earrings-tablet@1x.webp, img/jpeg/catalog/double-pearl-earrings-tablet@2x.webp 2x">
                 <!-- 1x: 270px; 2x: 540px -->
                 <source type="image/webp" srcset="img/jpeg/catalog/double-pearl-earrings-desktop@1x.webp, img/jpeg/catalog/double-pearl-earrings-desktop@2x.webp 2x">
                 <!-- 1x: 270px; 2x: 540px -->
@@ -247,15 +248,14 @@
             <li class="catalog__item">
               <a href="product-card.html" class="catalog__link">
                 <picture>
-                  <picture>
-                    <!-- 1x: 130px; 2x: 260px -->
-                    <source media="(max-width: 767px)" type="image/webp" srcset="img/jpeg/catalog/black-choker-gold-bead-mobile@1x.webp, img/jpeg/catalog/black-choker-gold-bead-mobile@2x.webp 2x">
-                    <!-- 1x: 206px; 2x: 412px -->
-                    <source media="(max-width: 1023px)" type="image/webp" srcset="img/jpeg/catalog/black-choker-gold-bead-tablet@1x.webp img/jpeg/catalog/black-choker-gold-bead-tablet@2x.webp 2x">
-                    <!-- 1x: 270px; 2x: 540px -->
-                    <source type="image/webp" srcset="img/jpeg/catalog/black-choker-gold-bead-desktop@1x.webp, img/jpeg/catalog/black-choker-gold-bead-desktop@2x.webp 2x">
-                    <!-- 1x: 270px; 2x: 540px -->
-                    <img width="270" height="272" src="img/jpeg/catalog/black-choker-gold-bead-desktop@1x.jpg" srcset="img/jpeg/catalog/black-choker-gold-bead-desktop@2x.jpg 2x" alt="Choker with gold bead" loading="lazy">
+                  <!-- 1x: 130px; 2x: 260px -->
+                  <source media="(max-width: 767px)" type="image/webp" srcset="img/jpeg/catalog/black-choker-gold-bead-mobile@1x.webp, img/jpeg/catalog/black-choker-gold-bead-mobile@2x.webp 2x">
+                  <!-- 1x: 206px; 2x: 412px -->
+                  <source media="(max-width: 1023px)" type="image/webp" srcset="img/jpeg/catalog/black-choker-gold-bead-tablet@1x.webp, img/jpeg/catalog/black-choker-gold-bead-tablet@2x.webp 2x">
+                  <!-- 1x: 270px; 2x: 540px -->
+                  <source type="image/webp" srcset="img/jpeg/catalog/black-choker-gold-bead-desktop@1x.webp, img/jpeg/catalog/black-choker-gold-bead-desktop@2x.webp 2x">
+                  <!-- 1x: 270px; 2x: 540px -->
+                  <img width="270" height="272" src="img/jpeg/catalog/black-choker-gold-bead-desktop@1x.jpg" srcset="img/jpeg/catalog/black-choker-gold-bead-desktop@2x.jpg 2x" alt="Choker with gold bead" loading="lazy">
                 </picture>
                 <p class="catalog__text">Choker with gold bead</p>
                 <span class="catalog__price">$ 55</span>
@@ -267,7 +267,7 @@
                   <!-- 1x: 130px; 2x: 260px -->
                   <source media="(max-width: 767px)" type="image/webp" srcset="img/jpeg/catalog/gold-layered-necklace-mobile@1x.webp, img/jpeg/catalog/gold-layered-necklace-mobile@2x.webp 2x">
                   <!-- 1x: 206px; 2x: 412px -->
-                  <source media="(max-width: 1023px)" type="image/webp" srcset="img/jpeg/catalog/gold-layered-necklace-tablet@1x.webp img/jpeg/catalog/gold-layered-necklace-tablet@2x.webp 2x">
+                  <source media="(max-width: 1023px)" type="image/webp" srcset="img/jpeg/catalog/gold-layered-necklace-tablet@1x.webp, img/jpeg/catalog/gold-layered-necklace-tablet@2x.webp 2x">
                   <!-- 1x: 270px; 2x: 540px -->
                   <source type="image/webp" srcset="img/jpeg/catalog/gold-layered-necklace-desktop@1x.webp, img/jpeg/catalog/gold-layered-necklace-desktop@2x.webp 2x">
                   <!-- 1x: 270px; 2x: 540px -->
@@ -283,7 +283,7 @@
                   <!-- 1x: 130px; 2x: 260px -->
                   <source media="(max-width: 767px)" type="image/webp" srcset="img/jpeg/catalog/blue-gemstone-pendant-mobile@1x.webp, img/jpeg/catalog/blue-gemstone-pendant-mobile@2x.webp 2x">
                   <!-- 1x: 206px; 2x: 412px -->
-                  <source media="(max-width: 1023px)" type="image/webp" srcset="img/jpeg/catalog/blue-gemstone-pendant-tablet@1x.webp img/jpeg/catalog/blue-gemstone-pendant-tablet@2x.webp 2x">
+                  <source media="(max-width: 1023px)" type="image/webp" srcset="img/jpeg/catalog/blue-gemstone-pendant-tablet@1x.webp, img/jpeg/catalog/blue-gemstone-pendant-tablet@2x.webp 2x">
                   <!-- 1x: 270px; 2x: 540px -->
                   <source type="image/webp" srcset="img/jpeg/catalog/blue-gemstone-pendant-desktop@1x.webp, img/jpeg/catalog/blue-gemstone-pendant-desktop@2x.webp 2x">
                   <!-- 1x: 270px; 2x: 540px -->
@@ -299,7 +299,7 @@
                   <!-- 1x: 130px; 2x: 260px -->
                   <source media="(max-width: 767px)" type="image/webp" srcset="img/jpeg/catalog/boho-earrings-mobile@1x.webp, img/jpeg/catalog/boho-earrings-mobile@2x.webp 2x">
                   <!-- 1x: 206px; 2x: 412px -->
-                  <source media="(max-width: 1023px)" type="image/webp" srcset="img/jpeg/catalog/boho-earrings-tablet@1x.webp img/jpeg/catalog/boho-earrings-tablet@2x.webp 2x">
+                  <source media="(max-width: 1023px)" type="image/webp" srcset="img/jpeg/catalog/boho-earrings-tablet@1x.webp, img/jpeg/catalog/boho-earrings-tablet@2x.webp 2x">
                   <!-- 1x: 270px; 2x: 540px -->
                   <source type="image/webp" srcset="img/jpeg/catalog/boho-earrings-desktop@1x.webp, img/jpeg/catalog/boho-earrings-desktop@2x.webp 2x">
                   <!-- 1x: 270px; 2x: 540px -->
@@ -315,7 +315,7 @@
                   <!-- 1x: 130px; 2x: 260px -->
                   <source media="(max-width: 767px)" type="image/webp" srcset="img/jpeg/catalog/bird-necklace-mobile@1x.webp, img/jpeg/catalog/bird-necklace-mobile@2x.webp 2x">
                   <!-- 1x: 206px; 2x: 412px -->
-                  <source media="(max-width: 1023px)" type="image/webp" srcset="img/jpeg/catalog/bird-necklace-tablet@1x.webp img/jpeg/catalog/bird-necklace-tablet@2x.webp 2x">
+                  <source media="(max-width: 1023px)" type="image/webp" srcset="img/jpeg/catalog/bird-necklace-tablet@1x.webp, img/jpeg/catalog/bird-necklace-tablet@2x.webp 2x">
                   <!-- 1x: 270px; 2x: 540px -->
                   <source type="image/webp" srcset="img/jpeg/catalog/bird-necklace-desktop@1x.webp, img/jpeg/catalog/bird-necklace-desktop@2x.webp 2x">
                   <!-- 1x: 270px; 2x: 540px -->
@@ -331,7 +331,7 @@
                   <!-- 1x: 130px; 2x: 260px -->
                   <source media="(max-width: 767px)" type="image/webp" srcset="img/jpeg/catalog/black-leather-choker-necklace-mobile@1x.webp, img/jpeg/catalog/black-leather-choker-necklace-mobile@2x.webp 2x">
                   <!-- 1x: 206px; 2x: 412px -->
-                  <source media="(max-width: 1023px)" type="image/webp" srcset="img/jpeg/catalog/black-leather-choker-necklace-tablet@1x.webp img/jpeg/catalog/black-leather-choker-necklace-tablet@2x.webp 2x">
+                  <source media="(max-width: 1023px)" type="image/webp" srcset="img/jpeg/catalog/black-leather-choker-necklace-tablet@1x.webp, img/jpeg/catalog/black-leather-choker-necklace-tablet@2x.webp 2x">
                   <!-- 1x: 270px; 2x: 540px -->
                   <source type="image/webp" srcset="img/jpeg/catalog/black-leather-choker-necklace-desktop@1x.webp, img/jpeg/catalog/black-leather-choker-necklace-desktop@2x.webp 2x">
                   <!-- 1x: 270px; 2x: 540px -->
@@ -347,7 +347,7 @@
                   <!-- 1x: 130px; 2x: 260px -->
                   <source media="(max-width: 767px)" type="image/webp" srcset="img/jpeg/catalog/purple-gemstone-necklace-mobile@1x.webp, img/jpeg/catalog/purple-gemstone-necklace-mobile@2x.webp 2x">
                   <!-- 1x: 206px; 2x: 412px -->
-                  <source media="(max-width: 1023px)" type="image/webp" srcset="img/jpeg/catalog/purple-gemstone-necklace-tablet@1x.webp img/jpeg/catalog/purple-gemstone-necklace-tablet@2x.webp 2x">
+                  <source media="(max-width: 1023px)" type="image/webp" srcset="img/jpeg/catalog/purple-gemstone-necklace-tablet@1x.webp, img/jpeg/catalog/purple-gemstone-necklace-tablet@2x.webp 2x">
                   <!-- 1x: 270px; 2x: 540px -->
                   <source type="image/webp" srcset="img/jpeg/catalog/purple-gemstone-necklace-desktop@1x.webp, img/jpeg/catalog/purple-gemstone-necklace-desktop@2x.webp 2x">
                   <!-- 1x: 270px; 2x: 540px -->
@@ -363,7 +363,7 @@
                   <!-- 1x: 130px; 2x: 260px -->
                   <source media="(max-width: 767px)" type="image/webp" srcset="img/jpeg/catalog/elephant-earrings-mobile@1x.webp, img/jpeg/catalog/elephant-earrings-mobile@2x.webp 2x">
                   <!-- 1x: 206px; 2x: 412px -->
-                  <source media="(max-width: 1023px)" type="image/webp" srcset="img/jpeg/catalog/elephant-earrings-tablet@1x.webp img/jpeg/catalog/elephant-earrings@2x.webp 2x">
+                  <source media="(max-width: 1023px)" type="image/webp" srcset="img/jpeg/catalog/elephant-earrings-tablet@1x.webp, img/jpeg/catalog/elephant-earrings@2x.webp 2x">
                   <!-- 1x: 270px; 2x: 540px -->
                   <source type="image/webp" srcset="img/jpeg/catalog/elephant-earrings-desktop@1x.webp, img/jpeg/catalog/elephant-earrings-desktop@2x.webp 2x">
                   <!-- 1x: 270px; 2x: 540px -->
@@ -379,7 +379,7 @@
                   <!-- 1x: 130px; 2x: 260px -->
                   <source media="(max-width: 767px)" type="image/webp" srcset="img/jpeg/catalog/threader-necklace-closeup-mobile@1x.webp, img/jpeg/catalog/threader-necklace-closeup-mobile@2x.webp 2x">
                   <!-- 1x: 206px; 2x: 412px -->
-                  <source media="(max-width: 1023px)" type="image/webp" srcset="img/jpeg/catalog/threader-necklace-closeup-tablet@1x.webp img/jpeg/catalog/threader-necklace-closeup-tablet@2x.webp 2x">
+                  <source media="(max-width: 1023px)" type="image/webp" srcset="img/jpeg/catalog/threader-necklace-closeup-tablet@1x.webp, img/jpeg/catalog/threader-necklace-closeup-tablet@2x.webp 2x">
                   <!-- 1x: 270px; 2x: 540px -->
                   <source type="image/webp" srcset="img/jpeg/catalog/threader-necklace-closeup-desktop@1x.webp, img/jpeg/catalog/threader-necklace-closeup-desktop@2x.webp 2x">
                   <!-- 1x: 270px; 2x: 540px -->
@@ -395,7 +395,7 @@
                   <!-- 1x: 130px; 2x: 260px -->
                   <source media="(max-width: 767px)" type="image/webp" srcset="img/jpeg/catalog/origami-crane-necklace-mobile@1x.webp, img/jpeg/catalog/origami-crane-necklace-mobile@2x.webp 2x">
                   <!-- 1x: 206px; 2x: 412px -->
-                  <source media="(max-width: 1023px)" type="image/webp" srcset="img/jpeg/catalog/origami-crane-necklace-tablet@1x.webp img/jpeg/catalog/origami-crane-necklace-tablet@2x.webp 2x">
+                  <source media="(max-width: 1023px)" type="image/webp" srcset="img/jpeg/catalog/origami-crane-necklace-tablet@1x.webp, img/jpeg/catalog/origami-crane-necklace-tablet@2x.webp 2x">
                   <!-- 1x: 270px; 2x: 540px -->
                   <source type="image/webp" srcset="img/jpeg/catalog/origami-crane-necklace-desktop@1x.webp, img/jpeg/catalog/origami-crane-necklace-desktop@2x.webp 2x">
                   <!-- 1x: 270px; 2x: 540px -->
@@ -411,7 +411,7 @@
                   <!-- 1x: 130px; 2x: 260px -->
                   <source media="(max-width: 767px)" type="image/webp" srcset="img/jpeg/catalog/marble-earrings-mobile@1x.webp, img/jpeg/catalog/marble-earrings-mobile@2x.webp 2x">
                   <!-- 1x: 206px; 2x: 412px -->
-                  <source media="(max-width: 1023px)" type="image/webp" srcset="img/jpeg/catalog/marble-earrings-tablet@1x.webp img/jpeg/catalog/marble-earrings-tablet@2x.webp 2x">
+                  <source media="(max-width: 1023px)" type="image/webp" srcset="img/jpeg/catalog/marble-earrings-tablet@1x.webp, img/jpeg/catalog/marble-earrings-tablet@2x.webp 2x">
                   <!-- 1x: 270px; 2x: 540px -->
                   <source type="image/webp" srcset="img/jpeg/catalog/marble-earrings-desktop@1x.webp, img/jpeg/catalog/marble-earrings-desktop@2x.webp 2x">
                   <!-- 1x: 270px; 2x: 540px -->
@@ -424,14 +424,14 @@
           </ul>
           <div class="catalog__pagination-wrapper">
             <div class="catalog__pagination">
-              <button class="catalog__pagination-btn btn__pagination btn__pagination--active" type="button" aria-label="Slide 1">1</button>
-              <button class="catalog__pagination-btn btn__pagination" type="button" aria-label="Slide 2">2</button>
-              <button class="catalog__pagination-btn btn__pagination" type="button" aria-label="Slide 3">3</button>
-              <button class="catalog__pagination-btn btn__pagination" type="button" aria-label="Slide 4">4</button>
-              <button class="catalog__pagination-btn btn__pagination" type="button" aria-label="Slide 5">5</button>
+              <button class="catalog__pagination-btn btn-pagination btn-pagination--active" type="button" aria-label="Slide 1">1</button>
+              <button class="catalog__pagination-btn btn-pagination" type="button" aria-label="Slide 2">2</button>
+              <button class="catalog__pagination-btn btn-pagination" type="button" aria-label="Slide 3">3</button>
+              <button class="catalog__pagination-btn btn-pagination" type="button" aria-label="Slide 4">4</button>
+              <button class="catalog__pagination-btn btn-pagination" type="button" aria-label="Slide 5">5</button>
             </div>
-            <button class="catalog__btn-slider btn__slider btn__slider--prev" type="button" aria-label="Prev slide">Previous</button>
-            <button class="catalog__btn-slider btn__slider btn__slider--next" type="button" aria-label="Next slide">Next</button>
+            <button class="catalog__btn-slider btn-slider btn-slider--prev" type="button" aria-label="Prev slide">Previous</button>
+            <button class="catalog__btn-slider btn-slider btn-slider--next" type="button" aria-label="Next slide">Next</button>
           </div>
         </div>
       </div>
@@ -528,7 +528,7 @@
     <section class="login">
       <div class="login__top">
         <button class="login__btn js-login-close">
-          <svg width="14" heigth="14">
+          <svg width="14" height="14">
             <use xlink:href="img/sprite-auto.svg#icon-close"></use>
           </svg>
         </button>

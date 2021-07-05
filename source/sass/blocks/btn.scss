@@ -2,7 +2,7 @@
   @include btn-reset;
 }
 
-.btn__search {
+.btn-search {
   position: absolute;
   top: 4px;
   left: 10px;
@@ -47,7 +47,7 @@
   }
 }
 
-.btn__slider {
+.btn-slider {
   @include btn-reset;
 
   height: 20px;
@@ -83,7 +83,7 @@
   }
 }
 
-.btn__pagination {
+.btn-pagination {
   @include btn-reset;
 
   padding: 6px;

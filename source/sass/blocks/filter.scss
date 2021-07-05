@@ -157,9 +157,13 @@
   }
 }
 
-.filter__wrapper--active {
+.filter__item--active .filter__wrapper {
   display: flex;
 }
+
+// .filter__wrapper--active {
+  // display: flex;
+// }
 
 .filter__wrapper label {
   position: relative;
@@ -361,6 +365,7 @@
 }
 
 .filter__price input {
+  width: 30px;
   max-width: 50px;
   padding: 0;
   border: none;

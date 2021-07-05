@@ -48,7 +48,7 @@
         <label class="form__label">
           <input type="search" name="search" placeholder="Type here to search">
         </label>
-        <button class="btn btn__search" type="submit" aria-label="Search">
+        <button class="btn btn-search" type="submit" aria-label="Search">
           <svg class="btn btn--img" width="14" height="14">
             <use xlink:href="img/sprite-auto.svg#icon-search"></use>
           </svg>
@@ -128,7 +128,7 @@
               </svg>
             </button>
             <ul class="filter__list accordion">
-              <li class="filter__item accordion__heading">
+              <li class="filter__item accordion__heading" data-class="filter__item">
                 <h3 class="filter__heading">Product</h3>
                 <button class="filter__btn js-btn-filter" type="button">
                   <svg class="filter__btn-icon" width="17" height="9">
@@ -154,7 +154,7 @@
                   </label>
                 </div>
               </li>
-              <li class="filter__item">
+              <li class="filter__item" data-class="filter__item">
                 <h3 class="filter__heading">Material</h3>
                 <button class="filter__btn js-btn-filter" type="button">
                   <svg class="filter__btn-icon" width="17" height="9">
@@ -424,14 +424,14 @@
           </ul>
           <div class="catalog__pagination-wrapper">
             <div class="catalog__pagination">
-              <button class="catalog__pagination-btn btn__pagination btn__pagination--active" type="button" aria-label="Slide 1">1</button>
-              <button class="catalog__pagination-btn btn__pagination" type="button" aria-label="Slide 2">2</button>
-              <button class="catalog__pagination-btn btn__pagination" type="button" aria-label="Slide 3">3</button>
-              <button class="catalog__pagination-btn btn__pagination" type="button" aria-label="Slide 4">4</button>
-              <button class="catalog__pagination-btn btn__pagination" type="button" aria-label="Slide 5">5</button>
+              <button class="catalog__pagination-btn btn-pagination btn-pagination--active" type="button" aria-label="Slide 1">1</button>
+              <button class="catalog__pagination-btn btn-pagination" type="button" aria-label="Slide 2">2</button>
+              <button class="catalog__pagination-btn btn-pagination" type="button" aria-label="Slide 3">3</button>
+              <button class="catalog__pagination-btn btn-pagination" type="button" aria-label="Slide 4">4</button>
+              <button class="catalog__pagination-btn btn-pagination" type="button" aria-label="Slide 5">5</button>
             </div>
-            <button class="catalog__btn-slider btn__slider btn__slider--prev" type="button" aria-label="Prev slide">Previous</button>
-            <button class="catalog__btn-slider btn__slider btn__slider--next" type="button" aria-label="Next slide">Next</button>
+            <button class="catalog__btn-slider btn-slider btn-slider--prev" type="button" aria-label="Prev slide">Previous</button>
+            <button class="catalog__btn-slider btn-slider btn-slider--next" type="button" aria-label="Next slide">Next</button>
           </div>
         </div>
       </div>
