@@ -76,13 +76,11 @@
   const filter = () => {
     const pageClass = {
       PAGE__LOCKED: 'page--locked',
-      // FILTER_INPUT_NOJS: 'filter__inputs--nojs',
       FILTER_ACTIVE: 'filter--active',
       ACTIVE_CLASS: '--active'
     };
 
     const page = document.querySelector('.js-page');
-    // const rangeInput = document.querySelector('.js-range-input');
     const filterBlock = document.querySelector('.js-filter');
     const filterForm = document.querySelector('.js-filter-form');
     const filterOpenBtn = document.querySelector('.js-btn-filter-open');
@@ -94,22 +92,6 @@
       const activeClass = `${target.dataset.class}${pageClass.ACTIVE_CLASS}`;
       target.classList.toggle(activeClass);
     };
-
-    // const toggleFilterItemHandler = () => {
-      // const accordions = document.getElementsByClassName('filter__btn');
-//
-      // for ( const acc of accordions ) {
-        // acc.addEventListener('click', function() {
-          // const body = this.nextElementSibling;
-          // body.classList.toggle('filter__wrapper--active');
-//
-          // const btn = document.querySelector('.filter__btn');
-          // btn.classList.toggle('filter__btn--active');
-          // const indication = this.querySelector('.state-indication');
-          // if ( indication.classList.contains('plus') ) {
-        // });
-      // }
-    // };
 
     const closeFilterHandler = () => {
       filterBlock.classList.remove(pageClass.FILTER_ACTIVE);
@@ -136,9 +118,6 @@
       filterOpenBtn.addEventListener('click', openFilterHandler);
     }
 
-    // if (rangeInput) {
-      // rangeInput.classList.remove(pageClass.FILTER_INPUT_NOJS);
-    // }
   };
 
   filter();
@@ -295,29 +274,6 @@
 })();
 
 (function () {
-  // const accordeon = () => {
-    // const list = document.querySelectorAll(".faq__list");
-    // const nojsList = document.querySelector(".faq__list");
-//
-    // nojsList.classList.remove('js-accordion--nojs');
-//
-    // for (const listItem of list) {
-      // const faqListItems = listItem.querySelectorAll(".faq__list-item");
-      // for (const faqListItem of faqListItems) {
-        // const btn = faqListItem.querySelector(".faq__btn");
-        // btn.addEventListener('click', () => {
-          // for (const otherfaqListItem of faqListItems) {
-            // if (otherfaqListItem !== faqListItem) {
-              // otherfaqListItem.classList.remove('faq__list-item--active');
-            // }
-          // }
-          // faqListItem.classList.toggle('faq__list-item--active');
-        // });
-      // }
-    // }
-  // }
-  // accordeon();
-
   const accordion = () => {
     const pageClass = {
       ACCORDION_CLASS: 'js-btn-accordion',

@@ -92,19 +92,6 @@
       const activeClass = `${target.dataset.class}${pageClass.ACTIVE_CLASS}`;
       target.classList.toggle(activeClass);
     };
-    // const toggleFilterItemHandler = (evt) => {
-      // const accordions = document.getElementsByClassName('filter__btn');
-//
-      // for ( const acc of accordions ) {
-        // acc.addEventListener('click', function() {
-          // const body = this.nextElementSibling;
-          // body.classList.toggle('filter__wrapper--active');
-//
-          // const btn = document.querySelector('.filter__btn');
-          // btn.classList.toggle('filter__btn--active');
-        // });
-      // }
-    // };
 
     const closeFilterHandler = () => {
       filterBlock.classList.remove(pageClass.FILTER_ACTIVE);
@@ -287,29 +274,6 @@
 })();
 
 (function () {
-  // const accordeon = () => {
-    // const list = document.querySelectorAll(".faq__list");
-    // const nojsList = document.querySelector(".faq__list");
-//
-    // nojsList.classList.remove('js-accordion--nojs');
-//
-    // for (const listItem of list) {
-      // const faqListItems = listItem.querySelectorAll(".faq__list-item");
-      // for (const faqListItem of faqListItems) {
-        // const btn = faqListItem.querySelector(".faq__btn");
-        // btn.addEventListener('click', () => {
-          // for (const otherfaqListItem of faqListItems) {
-            // if (otherfaqListItem !== faqListItem) {
-              // otherfaqListItem.classList.remove('faq__list-item--active');
-            // }
-          // }
-          // faqListItem.classList.toggle('faq__list-item--active');
-        // });
-      // }
-    // }
-  // }
-  // accordeon();
-
   const accordion = () => {
     const pageClass = {
       ACCORDION_CLASS: 'js-btn-accordion',

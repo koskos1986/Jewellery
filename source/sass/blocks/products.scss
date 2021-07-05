@@ -12,13 +12,13 @@
   align-items: center;
   width: 100%;
   max-width: $max-width;
-  padding-top: 121px;
+  padding-top: 119px;
   padding-right: $padding-desktop;
   padding-bottom: 60px;
   padding-left: $padding-desktop;
 
   @include tablet {
-    padding-top: 80px;
+    padding-top: 69px;
     padding-right: $padding-tablet;
     padding-bottom: 40px;
     padding-left: $padding-tablet;
@@ -37,13 +37,22 @@
   @include heading;
 
   margin-bottom: 23px;
+
+  @include tablet {
+    margin-bottom: 22px;
+  }
 }
 
 .products__link-heading {
   @include style-reset;
   @include link;
 
+  line-height: 22px;
   margin-bottom: 60px;
+
+  @include tablet {
+    margin-bottom: 52px;
+  }
 }
 
 .products__slider {
@@ -109,7 +118,7 @@
   }
 
   @include tablet {
-    margin-bottom: 15px;
+    margin-bottom: 20px;
   }
 }
 
@@ -131,7 +140,7 @@
   text-align: center;
 
   @include tablet {
-    margin-bottom: 12px;
+    margin-bottom: 7px;
   }
 
   @include mobile {

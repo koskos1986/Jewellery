@@ -5,7 +5,7 @@
 .btn-search {
   position: absolute;
   top: 4px;
-  left: 10px;
+  left: 0;
 
   @include tablet {
     top: 12px;
@@ -72,14 +72,24 @@
 
   &--left {
     position: absolute;
-    top: 177px;
+    top: 157px;
     left: $padding-desktop;
+
+    @include tablet {
+      top: 108px;
+      left: 45px;
+    }
   }
 
   &--right {
     position: absolute;
-    top: 177px;
+    top: 157px;
     right: $padding-desktop;
+
+    @include tablet {
+      top: 108px;
+      right: 45px;
+    }
   }
 }
 

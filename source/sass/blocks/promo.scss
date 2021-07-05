@@ -10,16 +10,18 @@
   align-items: center;
   width: 100%;
   max-width: $max-width;
-  padding-top: 70px;
+  padding-top: 49px;
   padding-right: $padding-desktop;
   padding-bottom: 60px;
   padding-left: $padding-desktop;
+  margin-bottom: 66px;
 
   @include tablet {
-    padding-top: 40px;
+    padding-top: 42px;
     padding-right: $padding-tablet;
-    padding-bottom: 40px;
+    padding-bottom: 42px;
     padding-left: $padding-tablet;
+    margin-bottom: 32px;
   }
 
   @include mobile {
@@ -34,13 +36,19 @@
   @include style-reset;
   @include heading;
 
-  margin-bottom: 35px;
+  margin-bottom: 28px;
+  letter-spacing: 0.028em;
+
+  @include tablet {
+    margin-bottom: 18px;
+  }
 }
 
 .promo__link {
   @include link;
 
   margin-bottom: 60px;
+  line-height: 27px;
 }
 
 
@@ -51,7 +59,12 @@
   grid-template-columns: repeat(5, auto);
   grid-template-rows: repeat(2, auto);
   column-gap: 27px;
-  row-gap: 34px;
+  row-gap: 27px;
+
+  @include tablet {
+    column-gap: 17px;
+    row-gap: 16px;
+  }
 
   @include mobile {
     grid-template-columns: repeat(2, auto);
@@ -64,6 +77,10 @@
   &--lady {
     grid-row: 1/-1;
     grid-column: 2/4;
+
+    @include tablet {
+      width: 230px;
+    }
 
     @include mobile {
       grid-row: 1/-2;

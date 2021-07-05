@@ -5,12 +5,14 @@
   width: 100%;
   padding-right: $padding-desktop;
   padding-left: $padding-desktop;
+  border-top: 1px solid $gray-line;
 
   @include tablet {
     display: flex;
     flex-direction: column;
     padding-right: $padding-tablet;
     padding-left: $padding-tablet;
+    border: none;
   }
 
   @include mobile {
@@ -64,6 +66,7 @@
 .nav__list-link {
   display: block;
   padding: 10px;
+  padding-top: 18px;
   font-size: $font-size;
   line-height: 24px;
   font-weight: $medium;

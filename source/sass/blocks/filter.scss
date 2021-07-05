@@ -161,10 +161,6 @@
   display: flex;
 }
 
-// .filter__wrapper--active {
-  // display: flex;
-// }
-
 .filter__wrapper label {
   position: relative;
   margin-bottom: 9px;
@@ -226,7 +222,7 @@
   background-color: $primary-brown;
 }
 
-.filter__btn--active .filter__btn-icon {
+.filter__item--active .filter__btn-icon {
   @include animation;
   transform: rotate(180deg);
 }
@@ -267,8 +263,6 @@
 .filter__form-btn--submit {
   margin-bottom: 25px;
 }
-
-// price!!!
 
 .filter__range-controls {
   position: relative;

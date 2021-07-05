@@ -17,10 +17,6 @@
   }
 }
 
-// .btn--img path {
-// stroke: $white;
-// }
-
 .header--open + main,
 .header--open ~ footer,
 .header--nojs + main,
@@ -42,16 +38,16 @@
   justify-content: space-between;
   width: 100%;
   max-width: $max-width;
-  // max-height: 115px;
   padding-top: 30px;
   padding-right: $padding-desktop;
-  padding-bottom: 19px;
+  padding-bottom: 8px;
   padding-left: $padding-desktop;
 
   @include tablet {
     flex-direction: row;
     flex-wrap: wrap;
     padding-right: $padding-tablet;
+    padding-bottom: 24px;
     padding-left: $padding-tablet;
   }
 
@@ -63,8 +59,7 @@
 
 .header__container-bottom {
   padding-top: 5px;
-  padding-bottom: 5px;
-  border-top: 1px solid $gray-line;
+  padding-bottom: 9px;
 
   @include tablet {
     display: none;
@@ -102,6 +97,16 @@
 
 .header__btn svg {
   pointer-events: none;
+}
+
+.header__logo {
+  @include tablet {
+    padding-left: 12px;
+  }
+}
+
+.header__logo-img {
+  color: $primary-brown;
 }
 
 .header__logo-img:hover {

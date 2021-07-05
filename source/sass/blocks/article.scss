@@ -62,8 +62,11 @@
 }
 
 .article__item:nth-child(2n) .article__wrapper {
+  order: -1;
+
   @include tablet {
-    order: -1;
+    padding-right: 84px;
+    padding-left: 84px;
   }
 
   @include mobile {
@@ -84,22 +87,30 @@
   padding-left: 61px;
   background-color: $bg-gray;
 
+  @include tablet {
+    width: 50%;
+    padding-top: 67px;
+    padding-right: 64px;
+    padding-left: 64px;
+  }
+
+  @include mobile {
+    width: 100%;
+  }
+
   &--big {
     position: absolute;
     bottom: 0;
     right: 0;
 
+    @include tablet {
+      position: static;
+      padding-top: 86px;
+    }
+
     @include mobile {
       position: static;
     }
-  }
-
-  @include tablet {
-    width: 50%;
-  }
-
-  @include mobile {
-    width: 100%;
   }
 }
 
@@ -121,6 +132,10 @@
   font-weight: $semi-bold;
   line-height: 33.8px;
   text-align: center;
+
+  @include tablet {
+    margin-bottom: 36px;
+  }
 }
 
 .article__link {
