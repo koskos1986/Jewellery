@@ -6,35 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Продаем ювелирные украшения">
   <title>Jewellery - Каталог</title>
-  <link rel="stylesheet" href="../build/css/style.min.css">
+  <link rel="stylesheet" href="css/style.min.css">
   <link rel="preload" href="fonts/Poppins-Medium.woff2" as="font">
   <link rel="preload" href="fonts/CormorantGaramond-Bold.woff2" as="font">
   <link rel="preload" href="fonts/CormorantGaramond-Italic.woff2" as="font">
-  <!-- Pixel glass-->
-  <style>
-    HTML {
-      background-repeat: no-repeat;
-      background-position:  50% 0;
-      /* Mobile layout by default */
-      background-image: url("img/PP/320-Catalog-mobilePP.png");
-    }
-    /* Tablet */
-    @media ( min-width: 768px ) {
-      HTML {
-        /* Tablet layout */
-        background-image: url("img/PP/768-Catalog-tabletPP.png");
-      }
-    }
-    /* Desktop */
-    @media ( min-width: 1366px ) {
-      HTML {
-        /* Desktop layout */
-        background-image: url("img/PP/Catalog-desktopPP.png");
-      }
-    }
-  </style>
-  <link type="text/css" href="../node_modules/pixel-glass/styles.css" rel="stylesheet">
-  <script type="text/javascript" src="../node_modules/pixel-glass/script.js"></script>
 </head>
 <body class="page js-page">
   <header class="header">
@@ -96,13 +71,13 @@
           </ul>
           <ul class="nav__list nav__list--tablet">
             <li class="nav__list-item">
-              <a class="nav__list-link  nav__list-link--bottom" href="#">About CH</a>
+              <a class="nav__list-link nav__list-link--bottom" href="#">About CH</a>
             </li>
             <li class="nav__list-item">
-              <a class="nav__list-link  nav__list-link--bottom" href="#">Stores & Hours</a>
+              <a class="nav__list-link nav__list-link--bottom" href="#">Stores & Hours</a>
             </li>
             <li class="nav__list-item">
-              <a class="nav__list-link  nav__list-link--bottom" href="#">Contact Us</a>
+              <a class="nav__list-link nav__list-link--bottom" href="#">Contact Us</a>
             </li>
             <li class="nav__list-item nav__list-item--login">
               <a class="nav__list-link nav__list-link--bottom nav__list-link--login js-login" href="login.html">Login</a>
@@ -114,8 +89,8 @@
 
   <main>
     <section class="lead lead--catalog">
-      <h1 class="lead__heading">ALL JEWELLERY</h1>
-      <p class="lead__text">Discover picks of fashion's finest trends in our jewellery catalog</p>
+      <h1 class="lead__heading lead__heading--catalog">ALL JEWELLERY</h1>
+      <p class="lead__text lead__text--catalog">Discover picks of fashion's finest trends in our jewellery catalog</p>
     </section>
     <section class="catalog">
       <h2 class="catalog__heading visually-hidden">Catalog</h2>
@@ -241,9 +216,9 @@
                 <!-- 1x: 270px; 2x: 540px -->
                 <img width="270" height="272" src="img/jpeg/catalog/double-pearl-earrings-desktop@1x.jpg" srcset="img/jpeg/catalog/double-pearl-earrings-desktop@2x.jpg 2x" alt="Double pearl earrings" loading="lazy">
                 </picture>
-                <p class="catalog__text">Double pearl earrings</p>
-                <span class="catalog__price">$ 115</span>
               </a>
+              <p class="catalog__text">Double pearl earrings</p>
+              <span class="catalog__price">$ 115</span>
             </li>
             <li class="catalog__item">
               <a href="product-card.html" class="catalog__link">
@@ -257,9 +232,9 @@
                   <!-- 1x: 270px; 2x: 540px -->
                   <img width="270" height="272" src="img/jpeg/catalog/black-choker-gold-bead-desktop@1x.jpg" srcset="img/jpeg/catalog/black-choker-gold-bead-desktop@2x.jpg 2x" alt="Choker with gold bead" loading="lazy">
                 </picture>
-                <p class="catalog__text">Choker with gold bead</p>
-                <span class="catalog__price">$ 55</span>
               </a>
+              <p class="catalog__text">Choker with gold bead</p>
+              <span class="catalog__price">$ 55</span>
             </li>
             <li class="catalog__item">
               <a href="product-card.html" class="catalog__link">
@@ -273,9 +248,9 @@
                   <!-- 1x: 270px; 2x: 540px -->
                   <img width="270" height="272" src="img/jpeg/catalog/gold-layered-necklace-desktop@1x.jpg" srcset="img/jpeg/catalog/gold-layered-necklace-desktop@2x.jpg 2x" alt="Gold layered necklace" loading="lazy">
                 </picture>
-                <p class="catalog__text">Gold layered necklace</p>
-                <span class="catalog__price">$ 155</span>
               </a>
+              <p class="catalog__text">Gold layered necklace</p>
+              <span class="catalog__price">$ 155</span>
             </li>
             <li class="catalog__item">
               <a href="product-card.html" class="catalog__link">
@@ -289,9 +264,9 @@
                   <!-- 1x: 270px; 2x: 540px -->
                   <img width="270" height="272" src="img/jpeg/catalog/blue-gemstone-pendant-desktop@1x.jpg" srcset="img/jpeg/catalog/blue-gemstone-pendant-desktop@2x.jpg 2x" alt="Blue gemstone pendant" loading="lazy">
                 </picture>
-                <p class="catalog__text">Blue gemstone pendant</p>
-                <span class="catalog__price">$ 105</span>
               </a>
+              <p class="catalog__text">Blue gemstone pendant</p>
+              <span class="catalog__price">$ 105</span>
             </li>
             <li class="catalog__item">
               <a href="product-card.html" class="catalog__link">
@@ -305,9 +280,9 @@
                   <!-- 1x: 270px; 2x: 540px -->
                   <img width="270" height="272" src="img/jpeg/catalog/boho-earrings-desktop@1x.jpg" srcset="img/jpeg/catalog/boho-earrings-desktop@2x.jpg 2x" alt="Boho earrings" loading="lazy">
                 </picture>
-                <p class="catalog__text">Boho earrings</p>
-                <span class="catalog__price">$ 75</span>
               </a>
+              <p class="catalog__text">Boho earrings</p>
+              <span class="catalog__price">$ 75</span>
             </li>
             <li class="catalog__item">
               <a href="product-card.html" class="catalog__link">
@@ -321,9 +296,9 @@
                   <!-- 1x: 270px; 2x: 540px -->
                   <img width="270" height="272" src="img/jpeg/catalog/bird-necklace-desktop@1x.jpg" srcset="img/jpeg/catalog/bird-necklace-desktop@2x.jpg 2x" alt="Gold bird necklace" loading="lazy">
                 </picture>
-                <p class="catalog__text">Gold bird necklace</p>
-                <span class="catalog__price">$ 135</span>
               </a>
+              <p class="catalog__text">Gold bird necklace</p>
+              <span class="catalog__price">$ 135</span>
             </li>
             <li class="catalog__item">
               <a href="product-card.html" class="catalog__link">
@@ -337,9 +312,9 @@
                   <!-- 1x: 270px; 2x: 540px -->
                   <img width="270" height="272" src="img/jpeg/catalog/black-leather-choker-necklace-desktop@1x.jpg" srcset="img/jpeg/catalog/black-leather-choker-necklace-desktop@2x.jpg 2x" alt="Black leather choker" loading="lazy">
                 </picture>
-                <p class="catalog__text">Black leather choker</p>
-                <span class="catalog__price">$ 85</span>
               </a>
+              <p class="catalog__text">Black leather choker</p>
+              <span class="catalog__price">$ 85</span>
             </li>
             <li class="catalog__item">
               <a href="product-card.html" class="catalog__link">
@@ -353,9 +328,9 @@
                   <!-- 1x: 270px; 2x: 540px -->
                   <img width="270" height="272" src="img/jpeg/catalog/purple-gemstone-necklace-desktop@1x.jpg" srcset="img/jpeg/catalog/purple-gemstone-necklace-desktop@2x.jpg 2x" alt="Necklace with amethyst" loading="lazy">
                 </picture>
-                <p class="catalog__text">Necklace with amethyst</p>
-                <span class="catalog__price">$ 145</span>
               </a>
+              <p class="catalog__text">Necklace with amethyst</p>
+              <span class="catalog__price">$ 145</span>
             </li>
             <li class="catalog__item">
               <a href="product-card.html" class="catalog__link">
@@ -369,9 +344,9 @@
                   <!-- 1x: 270px; 2x: 540px -->
                   <img width="270" height="272" src="img/jpeg/catalog/elephant-earrings-desktop@1x.jpg" srcset="img/jpeg/catalog/elephant-earrings-desktop@2x.jpg 2x" alt="Elephant earrings" loading="lazy">
                 </picture>
-                <p class="catalog__text">Elephant earrings</p>
-                <span class="catalog__price">$ 95</span>
               </a>
+              <p class="catalog__text">Elephant earrings</p>
+              <span class="catalog__price">$ 95</span>
             </li>
             <li class="catalog__item">
               <a href="product-card.html" class="catalog__link">
@@ -385,9 +360,9 @@
                   <!-- 1x: 270px; 2x: 540px -->
                   <img width="270" height="272" src="img/jpeg/catalog/threader-necklace-closeup-desktop@1x.jpg" srcset="img/jpeg/catalog/threader-necklace-closeup-desktop@2x.jpg 2x" alt="Threader necklace" loading="lazy">
                 </picture>
-                <p class="catalog__text">Threader necklace</p>
-                <span class="catalog__price">$ 115</span>
               </a>
+              <p class="catalog__text">Threader necklace</p>
+              <span class="catalog__price">$ 115</span>
             </li>
             <li class="catalog__item">
               <a href="product-card.html" class="catalog__link">
@@ -401,9 +376,9 @@
                   <!-- 1x: 270px; 2x: 540px -->
                   <img width="270" height="272" src="img/jpeg/catalog/origami-crane-necklace-desktop@1x.jpg" srcset="img/jpeg/catalog/origami-crane-necklace-desktop@2x.jpg 2x" alt="Origami crane necklace" loading="lazy">
                 </picture>
-                <p class="catalog__text">Origami crane necklace</p>
-                <span class="catalog__price">$ 105</span>
               </a>
+              <p class="catalog__text">Origami crane necklace</p>
+              <span class="catalog__price">$ 105</span>
             </li>
             <li class="catalog__item">
               <a href="" class="catalog__link">
@@ -417,9 +392,9 @@
                   <!-- 1x: 270px; 2x: 540px -->
                   <img width="270" height="272" src="img/jpeg/catalog/marble-earrings-desktop@1x.jpg" srcset="img/jpeg/catalog/marble-earrings-desktop@2x.jpg 2x" alt="Marble earrings" loading="lazy">
                 </picture>
-                <p class="catalog__text">Marble earrings</p>
-                <span class="catalog__price">$ 95</span>
               </a>
+              <p class="catalog__text">Marble earrings</p>
+              <span class="catalog__price">$ 95</span>
             </li>
           </ul>
           <div class="catalog__pagination-wrapper">

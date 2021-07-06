@@ -10,34 +10,9 @@
   <link rel="preload" href="fonts/Poppins-Medium.woff2" as="font">
   <link rel="preload" href="fonts/CormorantGaramond-Bold.woff2" as="font">
   <link rel="preload" href="fonts/CormorantGaramond-Italic.woff2" as="font">
-  <!-- Pixel glass-->
-  <style>
-    HTML {
-      background-repeat: no-repeat;
-      background-position:  50% 0;
-      /* Mobile layout by default */
-      background-image: url("img/PP/320-Product-card-mobilePP.png");
-    }
-    /* Tablet */
-    @media ( min-width: 768px ) {
-      HTML {
-        /* Tablet layout */
-        background-image: url("img/PP/768-Product-card-tabletPP.png");
-      }
-    }
-    /* Desktop */
-    @media ( min-width: 1366px ) {
-      HTML {
-        /* Desktop layout */
-        background-image: url("img/PP/Product-card-desktopPP.png");
-      }
-    }
-  </style>
-  <link type="text/css" href="../node_modules/pixel-glass/styles.css" rel="stylesheet">
-  <script type="text/javascript" src="../node_modules/pixel-glass/script.js"></script>
 </head>
 <body class="page js-page">
-  <header class="header">
+  <header class="header header--nojs">
     <div class="header__container header__container--top">
       <button class="header__btn btn btn--burger js-btn-menu" type="button" aria-label="Open or close a menu">
         <svg class="btn btn--img" width="25" height="19">
@@ -96,13 +71,13 @@
           </ul>
           <ul class="nav__list nav__list--tablet">
             <li class="nav__list-item">
-              <a class="nav__list-link  nav__list-link--bottom" href="#">About CH</a>
+              <a class="nav__list-link nav__list-link--bottom" href="#">About CH</a>
             </li>
             <li class="nav__list-item">
-              <a class="nav__list-link  nav__list-link--bottom" href="#">Stores & Hours</a>
+              <a class="nav__list-link nav__list-link--bottom" href="#">Stores & Hours</a>
             </li>
             <li class="nav__list-item">
-              <a class="nav__list-link  nav__list-link--bottom" href="#">Contact Us</a>
+              <a class="nav__list-link nav__list-link--bottom" href="#">Contact Us</a>
             </li>
             <li class="nav__list-item nav__list-item--login">
               <a class="nav__list-link nav__list-link--bottom nav__list-link--login js-login" href="login.html">Login</a>
@@ -208,21 +183,77 @@
     </section>
 
     <section class="products products--product-card">
-      <div class="products__container">
+      <div class="products__container products__container--card">
         <h2 class="products__heading products__heading--product-card">You May Also Like</h2>
-        <a href="catalog.html" class="products__link-heading">Shop now</a>
+        <a href="catalog.html" class="products__link-heading">Shop Now</a>
         <button class="btn btn-slider btn-slider--left">
-          <svg width="29" height="9">
+          <svg width="30" height="11">
             <use xlink:href="img/sprite-auto.svg#icon-arrow-left"></use>
           </svg>
         </button>
         <button class="btn btn-slider btn-slider--right">
-          <svg width="29" height="9">
+          <svg width="30" height="11">
             <use xlink:href="img/sprite-auto.svg#icon-arrow-right"></use>
           </svg>
         </button>
         <div class="products js-swiper swiper-container">
           <ul class="products__list swiper-wrapper">
+            <li class="products__item swiper-slide">
+              <a class="products__link" href="product-card.html">
+                <picture>
+                  <!-- 1x: 130px; 2x: 260px -->
+                  <source media="(max-width: 767px)" type="image/webp" srcset="img/jpeg/catalog/purple-gemstone-necklace-mobile@1x.webp, img/jpeg/catalog/purple-gemstone-necklace-mobile@2x.webp 2x">
+                  <!-- 1x: 324px; 2x: 648px -->
+                  <source media="(max-width: 1023px)" type="image/webp" srcset="img/jpeg/catalog/purple-gemstone-necklace-tablet@1x.webp, img/jpeg/catalog/purple-gemstone-necklace-tablet@2x.webp 2x">
+                  <!-- 1x: 270px; 2x: 440px -->
+                  <source type="image/webp" srcset="img/jpeg/catalog/purple-gemstone-necklace-desktop-slider@1x.webp, img/jpeg/catalog/purple-gemstone-necklace-desktop-slider@2x.webp 2x">
+                  <!-- 1x: 270px; 2x: 440px -->
+                  <img width="270" height="284" src="img/jpeg/catalog/purple-gemstone-necklace-desktop-slider@1x.jpg" srcset="img/jpeg/catalog/purple-gemstone-necklace-desktop-slider@2x.jpg 2x" alt="Purple gemstone necklace" loading="lazy">
+                </picture>
+              </a>
+              <p class="products__text">Necklace with amethyst</p>
+              <span class="products__price">$ 145</span>
+            </li>
+            <li class="products__item swiper-slide">
+              <a class="products__link" href="product-card.html">
+                <picture>
+                  <!-- 1x: 130px; 2x: 260px -->
+                  <source media="(max-width: 767px)" type="image/webp" srcset="img/jpeg/catalog/layered-choker-necklace-mobile@1x.webp, img/jpeg/catalog/layered-choker-necklace-mobile@1x.webp 2x">
+                  <!-- 1x: 324px; 2x: 648px -->
+                  <source media="(max-width: 1023px)" type="image/webp" srcset="img/jpeg/catalog/layered-choker-necklace-tablet@1x.webp, img/jpeg/catalog/layered-choker-necklace-tablet@2x.webp 2x">
+                  <!-- 1x: 270px; 2x: 440px -->
+                  <source type="image/webp" srcset="img/jpeg/catalog/layered-choker-necklace-desktop@1x.webp, img/jpeg/catalog/layered-choker-necklace-desktop@2x.webp 2x">
+                  <!-- 1x: 270px; 2x: 440px -->
+                  <img width="270" height="284" src="img/jpeg/catalog/layered-choker-necklace-desktop@1x.jpg" srcset="img/jpeg/catalog/layered-choker-necklace-desktop@2x.jpg 2x" alt="Purple gemstone necklace" loading="lazy">
+                </picture>
+              </a>
+              <p class="products__text">Layered сhoker</p>
+              <span class="products__price">$ 115</span>
+            </li>
+            <li class="products__item swiper-slide">
+              <a class="products__link" href="product-card.html">
+                <picture>
+                  <!-- 1x: 270px; 2x: 440px -->
+                  <source type="image/webp" srcset="img/jpeg/catalog/dainty-gold-necklace-desktop@1x.webp, img/jpeg/catalog/dainty-gold-necklace-desktop@2x.webp 2x">
+                  <!-- 1x: 270px; 2x: 440px -->
+                  <img width="270" height="284" src="img/jpeg/catalog/dainty-gold-necklace-desktop@1x.jpg" srcset="img/jpeg/catalog/dainty-gold-necklace-desktop@2x.jpg 2x" alt="Dainty gold necklace" loading="lazy">
+                </picture>
+              </a>
+              <p class="products__text">Gold chain</p>
+              <span class="products__price">$ 215</span>
+            </li>
+            <li class="products__item swiper-slide">
+              <a class="products__link" href="product-card.html">
+                <picture>
+                  <!-- 1x: 270px; 2x: 440px -->
+                  <source type="image/webp" srcset="img/jpeg/catalog/galaxy-earrings-desktop@1x.webp, img/jpeg/catalog/galaxy-earrings-desktop@2x.webp 2x">
+                  <!-- 1x: 270px; 2x: 440px -->
+                  <img width="270" height="284" src="img/jpeg/catalog/galaxy-earrings-desktop@1x.jpg" srcset="img/jpeg/catalog/galaxy-earrings-desktop@2x.jpg 2x" alt="Galaxy earrings" loading="lazy">
+                </picture>
+              </a>
+              <p class="products__text">Galaxy earrings</p>
+              <span class="products__price">$ 115</span>
+            </li>
             <li class="products__item swiper-slide">
               <a class="products__link" href="product-card.html">
                 <picture>
@@ -258,17 +289,25 @@
             <li class="products__item swiper-slide">
               <a class="products__link" href="product-card.html">
                 <picture>
-                  <!-- 1x: 130px; 2x: 260px -->
-                  <source media="(max-width: 767px)" type="image/webp" srcset="img/jpeg/catalog/purple-gemstone-necklace-mobile@1x.webp, img/jpeg/catalog/purple-gemstone-necklace-mobile@2x.webp 2x">
-                  <!-- 1x: 324px; 2x: 648px -->
-                  <source media="(max-width: 1023px)" type="image/webp" srcset="img/jpeg/catalog/purple-gemstone-necklace-tablet@1x.webp, img/jpeg/catalog/purple-gemstone-necklace-tablet@2x.webp 2x">
                   <!-- 1x: 270px; 2x: 440px -->
-                  <source type="image/webp" srcset="img/jpeg/catalog/purple-gemstone-necklace-desktop@1x.webp, img/jpeg/catalog/purple-gemstone-necklace-desktop@2x.webp 2x">
+                  <source type="image/webp" srcset="img/jpeg/catalog/dainty-gold-necklace-desktop@1x.webp, img/jpeg/catalog/dainty-gold-necklace-desktop@2x.webp 2x">
                   <!-- 1x: 270px; 2x: 440px -->
-                  <img width="270" height="284" src="img/jpeg/catalog/" srcset="img/jpeg/catalog/purple-gemstone-necklace-desktop@2x.jpg 2x" alt="Purple gemstone necklace" loading="lazy">
+                  <img width="270" height="284" src="img/jpeg/catalog/dainty-gold-necklace-desktop@1x.jpg" srcset="img/jpeg/catalog/dainty-gold-necklace-desktop@2x.jpg 2x" alt="Dainty gold necklace" loading="lazy">
                 </picture>
               </a>
-              <p class="products__text">Layered сhoker</p>
+              <p class="products__text">Gold chain</p>
+              <span class="products__price">$ 215</span>
+            </li>
+            <li class="products__item swiper-slide">
+              <a class="products__link" href="product-card.html">
+                <picture>
+                  <!-- 1x: 270px; 2x: 440px -->
+                  <source type="image/webp" srcset="img/jpeg/catalog/galaxy-earrings-desktop@1x.webp, img/jpeg/catalog/galaxy-earrings-desktop@2x.webp 2x">
+                  <!-- 1x: 270px; 2x: 440px -->
+                  <img width="270" height="284" src="img/jpeg/catalog/galaxy-earrings-desktop@1x.jpg" srcset="img/jpeg/catalog/galaxy-earrings-desktop@2x.jpg 2x" alt="Galaxy earrings" loading="lazy">
+                </picture>
+              </a>
+              <p class="products__text">Galaxy earrings</p>
               <span class="products__price">$ 115</span>
             </li>
             <li class="products__item swiper-slide">
@@ -281,7 +320,23 @@
                   <!-- 1x: 270px; 2x: 440px -->
                   <source type="image/webp" srcset="img/jpeg/catalog/purple-gemstone-necklace-desktop@1x.webp, img/jpeg/catalog/purple-gemstone-necklace-desktop@2x.webp 2x">
                   <!-- 1x: 270px; 2x: 440px -->
-                  <img width="270" height="284" src="img/jpeg/catalog/" srcset="img/jpeg/catalog/purple-gemstone-necklace-desktop@2x.jpg 2x" alt="Purple gemstone necklace" loading="lazy">
+                  <img width="270" height="284" src="img/jpeg/catalog/purple-gemstone-necklace-desktop@1x.jpg" srcset="img/jpeg/catalog/purple-gemstone-necklace-desktop@2x.jpg 2x" alt="Purple gemstone necklace" loading="lazy">
+                </picture>
+              </a>
+              <p class="products__text">Necklace with amethyst</p>
+              <span class="products__price">$ 145</span>
+            </li>
+            <li class="products__item swiper-slide">
+              <a class="products__link" href="product-card.html">
+                <picture>
+                  <!-- 1x: 130px; 2x: 260px -->
+                  <source media="(max-width: 767px)" type="image/webp" srcset="img/jpeg/catalog/layered-choker-necklace-mobile@1x.webp, img/jpeg/catalog/layered-choker-necklace-mobile@1x.webp 2x">
+                  <!-- 1x: 324px; 2x: 648px -->
+                  <source media="(max-width: 1023px)" type="image/webp" srcset="img/jpeg/catalog/layered-choker-necklace-tablet@1x.webp, img/jpeg/catalog/layered-choker-necklace-tablet@2x.webp 2x">
+                  <!-- 1x: 270px; 2x: 440px -->
+                  <source type="image/webp" srcset="img/jpeg/catalog/layered-choker-necklace-desktop@1x.webp, img/jpeg/catalog/layered-choker-necklace-desktop@2x.webp 2x">
+                  <!-- 1x: 270px; 2x: 440px -->
+                  <img width="270" height="284" src="img/jpeg/catalog/layered-choker-necklace-desktop@1x.jpg" srcset="img/jpeg/catalog/layered-choker-necklace-desktop@2x.jpg 2x" alt="Purple gemstone necklace" loading="lazy">
                 </picture>
               </a>
               <p class="products__text">Layered сhoker</p>
@@ -290,21 +345,33 @@
             <li class="products__item swiper-slide">
               <a class="products__link" href="product-card.html">
                 <picture>
-                  <!-- 1x: 130px; 2x: 260px -->
-                  <source media="(max-width: 767px)" type="image/webp" srcset="img/jpeg/catalog/purple-gemstone-necklace-mobile@1x.webp, img/jpeg/catalog/purple-gemstone-necklace-mobile@2x.webp 2x">
-                  <!-- 1x: 324px; 2x: 648px -->
-                  <source media="(max-width: 1023px)" type="image/webp" srcset="img/jpeg/catalog/purple-gemstone-necklace-tablet@1x.webp, img/jpeg/catalog/purple-gemstone-necklace-tablet@2x.webp 2x">
                   <!-- 1x: 270px; 2x: 440px -->
-                  <source type="image/webp" srcset="img/jpeg/catalog/purple-gemstone-necklace-desktop@1x.webp, img/jpeg/catalog/purple-gemstone-necklace-desktop@2x.webp 2x">
+                  <source type="image/webp" srcset="img/jpeg/catalog/dainty-gold-necklace-desktop@1x.webp, img/jpeg/catalog/dainty-gold-necklace-desktop@2x.webp 2x">
                   <!-- 1x: 270px; 2x: 440px -->
-                  <img width="270" height="284" src="img/jpeg/catalog/" srcset="img/jpeg/catalog/purple-gemstone-necklace-desktop@2x.jpg 2x" alt="Purple gemstone necklace" loading="lazy">
+                  <img width="270" height="284" src="img/jpeg/catalog/dainty-gold-necklace-desktop@1x.jpg" srcset="img/jpeg/catalog/dainty-gold-necklace-desktop@2x.jpg 2x" alt="Dainty gold necklace" loading="lazy">
                 </picture>
               </a>
-              <p class="products__text">Layered сhoker</p>
+              <p class="products__text">Gold chain</p>
+              <span class="products__price">$ 215</span>
+            </li>
+            <li class="products__item swiper-slide">
+              <a class="products__link" href="product-card.html">
+                <picture>
+                  <!-- 1x: 270px; 2x: 440px -->
+                  <source type="image/webp" srcset="img/jpeg/catalog/galaxy-earrings-desktop@1x.webp, img/jpeg/catalog/galaxy-earrings-desktop@2x.webp 2x">
+                  <!-- 1x: 270px; 2x: 440px -->
+                  <img width="270" height="284" src="img/jpeg/catalog/galaxy-earrings-desktop@1x.jpg" srcset="img/jpeg/catalog/galaxy-earrings-desktop@2x.jpg 2x" alt="Galaxy earrings" loading="lazy">
+                </picture>
+              </a>
+              <p class="products__text">Galaxy earrings</p>
               <span class="products__price">$ 115</span>
             </li>
           </ul>
-          <div class="products__pagination swiper-pagination"></div>
+          <div class="products__pagination swiper-pagination">
+            <button class="btn-pagination btn-pagination--active" type="button" aria-label="Slide 1">1</button>
+            <button class="btn-pagination" type="button" aria-label="Slide 2">2</button>
+            <button class="btn-pagination" type="button" aria-label="Slide 3">3</button>
+          </div>
         </div>
       </div>
     </section>

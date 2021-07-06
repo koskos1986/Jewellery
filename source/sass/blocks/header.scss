@@ -52,7 +52,9 @@
   }
 
   @include mobile {
+    padding-top: 12px;
     padding-right: $padding-mobile;
+    padding-bottom: 9px;
     padding-left: $padding-mobile;
   }
 }
@@ -103,10 +105,18 @@
   @include tablet {
     padding-left: 12px;
   }
+
+  @include mobile {
+    padding-left: 8px;
+  }
 }
 
 .header__logo-img {
   color: $primary-brown;
+
+  @include mobile {
+    width: 52px;
+  }
 }
 
 .header__logo-img:hover {

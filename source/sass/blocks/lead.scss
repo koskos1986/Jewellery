@@ -29,6 +29,15 @@
       background-image: url("../img/jpeg/backgrounds/bg-main-mobile@2x.webp");
     }
   }
+
+  &--catalog {
+    min-height: 261px;
+
+    @include mobile {
+      padding-right: $padding-mobile;
+      padding-left: $padding-mobile;
+    }
+  }
 }
 
 .lead__heading {
@@ -48,8 +57,25 @@
   }
 
   @include mobile {
+    margin-right: 0;
     font-size: 38px;
     line-height: 49.4px;
+  }
+
+  &--catalog {
+    margin-top: -4px;
+    margin-bottom: 10px;
+    font-size: 34px;
+    line-height: 44px;
+    letter-spacing: normal;
+
+    @include tablet {
+      margin-right: 3px;
+    }
+
+    @include mobile {
+      margin-right: 0;
+    }
   }
 }
 
@@ -70,7 +96,19 @@
   }
 
   @include mobile {
+    margin-right: 0;
     font-size: 34px;
     line-height: 44.2px;
+  }
+
+  &--catalog {
+    font-weight: $medium;
+    font-size: 22px;
+    line-height: 29px;
+    text-transform: none;
+
+    @include tablet {
+      margin-right: 1px;
+    }
   }
 }

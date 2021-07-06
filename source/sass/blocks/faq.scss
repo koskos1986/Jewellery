@@ -23,7 +23,7 @@
   }
 
   @include mobile {
-    padding-top: 35px;
+    padding-top: 27px;
     padding-right: $padding-mobile;
     padding-bottom: 35px;
     padding-left: $padding-mobile;
@@ -35,7 +35,11 @@
   @include heading;
 
   margin-bottom: 47px;
-  letter-spacing: 0.028em;
+  letter-spacing: 0.03em;
+
+  @include mobile {
+    margin-bottom: 28px;
+  }
 }
 
 .faq__list {
@@ -109,6 +113,7 @@
   }
 
   @include mobile {
+    margin-bottom: 0;
     font-size: 14px;
     line-height: 20px;
   }
@@ -129,17 +134,20 @@
   top: 52px;
   right: 48px;
   fill: transparent;
+  color: $primary-brown;
 
   @include tablet {
     width: 25px;
     height: 18px;
-    top: 51px;
-    right: 44px;
+    top: 45px;
+    right: 48px;
   }
 
   @include mobile {
-    width: 20px;
-    height: 10px;
+    width: 22px;
+    height: 16px;
+    top: 21px;
+    right: 23px;
   }
 }
 

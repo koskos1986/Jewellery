@@ -16,7 +16,6 @@
       display: flex;
       position: fixed;
       overflow: scroll;
-      // overflow-scrolling: touch;
       top: 0;
       left: 0;
       background-color: $white;
@@ -94,7 +93,7 @@
 
   &:last-child {
     border-bottom: 1px solid $primary-brown;
-    margin-bottom: 35px;
+    margin-bottom: 27px;
 
     @include tablet {
       margin-bottom: 40px;
@@ -133,9 +132,10 @@
 
 .filter__btn-icon {
   position: absolute;
-  top: 23px;
-  right: 28px;
+  top: 28px;
+  right: 23px;
   fill: transparent;
+  color: $primary-brown;
 }
 
 .filter__wrapper {
@@ -196,8 +196,8 @@
 .filter__wrapper input {
   @include animation;
   position: absolute;
-  top: 50%;
-  left: 9px;
+  top: 39%;
+  left: 6px;
   transform: translateY(-50%);
   appearance: none;
   width: 15px;
@@ -266,7 +266,7 @@
 
 .filter__range-controls {
   position: relative;
-  padding-bottom: 13px;
+  padding-bottom: 15px;
 
   @include tablet {
     padding-bottom: 15px;
@@ -295,7 +295,7 @@
 
 .filter__range-toggle {
   position: absolute;
-  top: -7px;
+  top: -4px;
   width: 15px;
   height: 15px;
   background-color: $primary-brown;
