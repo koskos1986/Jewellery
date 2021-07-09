@@ -8,6 +8,8 @@
 
   display: flex;
   justify-content: space-between;
+  width: 100%;
+  max-width: $max-width;
   padding-top: 91px;
   padding-right: $padding-desktop;
   padding-bottom: 75px;

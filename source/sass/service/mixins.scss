@@ -21,7 +21,7 @@
 }
 
 @mixin animation {
-  transition: all 0.2s ease;
+  transition: color 0.2s ease;
 }
 
 @mixin visually-hidden {
@@ -75,7 +75,7 @@
   }
 
   &:active {
-    transition: all 0.2s ease;
+    transition: color 0.2s ease;
     color: $text-black;
   }
 }

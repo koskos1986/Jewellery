@@ -62,6 +62,7 @@
 .header__container-bottom {
   padding-top: 5px;
   padding-bottom: 9px;
+  border-top: 1px solid $gray-line;
 
   @include tablet {
     display: none;
