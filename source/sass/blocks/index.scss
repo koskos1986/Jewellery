@@ -1,0 +1,11 @@
+.index__wrapper {
+  @include margin-auto;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.index__link {
+
+  @include link;
+}

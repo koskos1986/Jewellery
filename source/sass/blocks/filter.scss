@@ -29,11 +29,14 @@
 .filter--active .filter__form {
   @include tablet {
     position: relative;
-    width: 423px;
+    width: 100%;
+    padding-right: $padding-tablet;
+    padding-left: $padding-tablet;
   }
 
   @include mobile {
-    width: 270px;
+    padding-right: $padding-mobile;
+    padding-left: $padding-mobile;
   }
 }
 
@@ -52,8 +55,12 @@
   width: 32px;
   height: 32px;
   position: absolute;
-  top: -18px;
-  right: -16px;
+  top: -33px;
+  right: 32px;
+
+  @include mobile {
+    right: 4px;
+  }
 }
 
 .filter--active .filter__btn-close {

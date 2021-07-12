@@ -41,6 +41,12 @@
 
 .article__item picture {
   line-height: 0;
+  width: 50%;
+
+  @include mobile {
+    width: 100%;
+  }
+
 }
 
 .article__item img {
@@ -81,7 +87,8 @@
   flex-direction: column;
   align-items: center;
   flex-shrink: 0;
-  width: 285px;
+  // width: 285px;
+  width: 50%;
   min-height: 300px;
   padding-top: 64px;
   padding-right: 61px;

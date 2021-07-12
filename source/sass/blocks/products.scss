@@ -128,25 +128,20 @@
 
 .products__link {
   display: flex;
-  margin-bottom: 20px;
+  flex-direction: column;
   line-height: 0;
+  color: $text-black;
 
   &:hover,
   &:focus {
     filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
     transition: filter 0.5s ease;
   }
-
-  @include tablet {
-    margin-bottom: 20px;
-  }
-
-  @include mobile {
-    margin-bottom: 16px;
-  }
 }
 
 .products__item img {
+  margin-bottom: 20px;
+
   @include tablet {
     width: 324px;
     height: 340px;
@@ -154,13 +149,15 @@
 
   @include mobile {
     height: auto;
+    margin-bottom: 16px;
   }
 }
 
 .products__text {
   @include style-reset;
+
   border-bottom: none;
-  margin-bottom: 6px;
+  margin-bottom: 12px;
   text-align: center;
 
   @include tablet {
