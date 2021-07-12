@@ -52,16 +52,22 @@
   position: relative;
   border: 1px solid $primary-brown;
   padding-top: 43px;
-  padding-right: 392px;
+  padding-right: 28.7vw;
   padding-bottom: 36px;
   padding-left: 44px;
 
   @include tablet {
-    padding: 43px 80px 18px 48px;
+    padding-top: 43px;
+    padding-right: 10.42vw;
+    padding-bottom: 18px;
+    padding-left: 48px;
   }
 
   @include mobile {
-    padding: 16px 53px 7px 24px;
+    padding-top: 16px;
+    padding-right: 16.56vw;
+    padding-bottom: 7px;
+    padding-left: 24px;
   }
 
   &--active {
@@ -105,6 +111,9 @@
   @include style-reset;
   display: none;
 
+  max-height: 0; //для нового аккордеона
+  overflow: hidden; //для нового аккордеона
+  transition: max-height 0.2s ease-out; //для нового аккордеона
   margin-bottom: 22px;
   margin-left: 6px;
 
