@@ -10,7 +10,7 @@
   max-width: $max-width;
   padding-top: 70px;
   padding-right: $padding-desktop;
-  padding-bottom: 60px;
+  padding-bottom: 71px;
   padding-left: $padding-desktop;
 
   @include tablet {
@@ -44,7 +44,7 @@
   grid-template-rows: repeat(auto-fill, 125px);
   gap: 30px;
   padding-top: 10px;
-  margin-right: 100px;
+  margin-right: 80px;
   margin-left: 0;
 
   @media (max-width: 1250px) {
@@ -67,7 +67,7 @@
     display: flex;
     padding-top: 0;
     margin-right: 0;
-    margin-bottom: 36px;
+    margin-bottom: 32px;
   }
 
   &::after {
@@ -127,6 +127,7 @@
 }
 
 .product-card__img img {
+  display: block;
   object-fit: cover;
   height: 100%;
 
@@ -141,7 +142,7 @@
     margin-right: auto;
   }
 
-  width: 31.6%;
+  width: 33.4%;
   display: flex;
   flex-direction: column;
   padding-left: 20px;
@@ -153,6 +154,7 @@
 
   @include tablet {
     width: 47%;
+    padding-left: 0;
   }
 
   @include mobile {
