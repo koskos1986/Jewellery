@@ -41,21 +41,26 @@
 
 .article__item picture {
   line-height: 0;
-  width: 100%;
+  width: 50%;
 
   @include mobile {
     width: 100%;
   }
-
 }
 
 .article__item img {
-  height: 100%;
-  object-fit: cover;
+  display: block; //для правок
+  height: 100%; //для правок
+  width: 100%; //для правок
+  object-fit: cover; //для правок
 
   @include tablet {
     width: 100%;
   }
+}
+
+.article__item--big picture {
+  width: 100%;
 }
 
 .article__item--big img {
@@ -89,7 +94,7 @@
   flex-shrink: 0;
   // width: 285px;
   width: 50%;
-  min-height: 300px;
+  max-height: 300px;
   padding-top: 64px;
   padding-right: 61px;
   padding-bottom: 47px;
@@ -97,7 +102,6 @@
   background-color: $bg-gray;
 
   @include tablet {
-    width: 50%;
     padding-top: 67px;
     padding-right: 64px;
     padding-left: 64px;

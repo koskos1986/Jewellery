@@ -160,7 +160,7 @@
   }
 }
 
-.faq__list-item--active .faq__btn-icon {
+.-active .faq__btn-icon {
   @include animation;
   transform: rotate(180deg);
 }

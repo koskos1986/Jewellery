@@ -113,6 +113,13 @@
   }
 }
 
+.promo__list-item img {
+  display: block;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
 .promo__list-item picture {
   line-height: 0;
 }
