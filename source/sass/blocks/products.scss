@@ -142,7 +142,6 @@
 .products__link {
   display: flex;
   flex-direction: column;
-  line-height: 0;
   color: $text-black;
 
   &:hover,
@@ -162,7 +161,7 @@
 
   @include mobile {
     height: auto;
-    margin-bottom: 26px;
+    margin-bottom: 20px;
   }
 }
 
