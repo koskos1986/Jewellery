@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Продаем ювелирные украшения">
+  <title>Страница логина</title>
+  <link rel="preload" href="fonts/Poppins-Medium.woff2" as="font">
+  <link rel="preload" href="fonts/CormorantGaramond-Bold.woff2" as="font">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+  <header></header>
+  <main>
+    <h1 class="visually-hidden">Login</h1>
+    <section class="login">
+      <div class="login__top">
+        <button class="login__btn">
+          <svg width="14" height="14">
+            <use xlink:href="img/sprite-auto.svg#icon-close"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="login__container">
+        <h2 class="login__heading">Log In</h2>
+        <form class="login__form" action="https://echo.htmlacademy.ru" method="get">
+          <label>
+            <input type="email" placeholder="Your E-mail" required="">
+          </label>
+          <label>
+            <input id="password" name="password" type="password" placeholder="Password" required="">
+          </label>
+          <a class="login__link" href="#">Forgot your password?</a>
+          <button class="login__submit btn-primary" type="submit">Log In</button>
+        </form>
+        <div class="login__registration">
+          <p class="login__text">Don’t have an account?</p>
+          <a href="#" class="login__registration-link">Sign up</a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer></footer>
+</body>
+</html>
