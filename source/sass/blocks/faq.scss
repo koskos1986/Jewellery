@@ -23,7 +23,7 @@
   }
 
   @include mobile {
-    padding-top: 27px;
+    padding-top: 24px;
     padding-right: $padding-mobile;
     padding-bottom: 35px;
     padding-left: $padding-mobile;
@@ -53,7 +53,7 @@
   border: 1px solid $primary-brown;
   padding-top: 43px;
   padding-right: 28.7vw;
-  padding-bottom: 36px;
+  padding-bottom: 33px;
   padding-left: 44px;
 
   @include tablet {
@@ -97,7 +97,7 @@
   margin-bottom: 8px;
 
   @include tablet {
-    margin-bottom: 26px;
+    margin-bottom: 17px;
   }
 
   @include mobile {
@@ -114,10 +114,11 @@
   max-height: 0; //для нового аккордеона
   overflow: hidden; //для нового аккордеона
   transition: max-height 0.2s ease-out; //для нового аккордеона
-  margin-bottom: 22px;
+  margin-bottom: 5px;
   margin-left: 6px;
 
   @include tablet {
+    margin-bottom: 9px;
     margin-left: 0;
   }
 
@@ -125,6 +126,18 @@
     margin-bottom: 0;
     font-size: 14px;
     line-height: 20px;
+  }
+}
+
+.active + .faq__text {
+  @include tablet {
+    margin-top: 26px;
+    margin-bottom: 27px;
+  }
+
+  @include mobile {
+    margin-top: 13px;
+    margin-bottom: 11px;
   }
 }
 
@@ -160,7 +173,7 @@
   }
 }
 
-.-active .faq__btn-icon {
+.active .faq__btn-icon {
   @include animation;
   transform: rotate(180deg);
 }

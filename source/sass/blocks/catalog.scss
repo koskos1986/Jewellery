@@ -110,11 +110,21 @@
   }
 
   @include tablet {
-    margin-bottom: 12px;
+    margin-bottom: 3px;
   }
 
   @include mobile {
-    margin-bottom: 8px;
+    margin-bottom: 0;
+  }
+}
+
+.catalog__link img {
+  @include tablet {
+    margin-bottom: 10px;
+  }
+
+  @include mobile {
+    margin-bottom: 13px;
   }
 }
 

@@ -10,22 +10,22 @@
   align-items: center;
   width: 100%;
   max-width: $max-width;
-  padding-top: 49px;
+  padding-top: 46px;
   padding-right: $padding-desktop;
   padding-bottom: 60px;
   padding-left: $padding-desktop;
-  margin-bottom: 66px;
+  margin-bottom: 72px;
 
   @include tablet {
-    padding-top: 42px;
+    padding-top: 41px;
     padding-right: $padding-tablet;
     padding-bottom: 42px;
     padding-left: $padding-tablet;
-    margin-bottom: 32px;
+    margin-bottom: 39px;
   }
 
   @include mobile {
-    padding-top: 24px;
+    padding-top: 26px;
     padding-right: $padding-mobile;
     padding-bottom: 35px;
     padding-left: $padding-mobile;
@@ -52,7 +52,7 @@
   line-height: 27px;
 
   @include mobile {
-    margin-bottom: 46px;
+    margin-bottom: 45px;
   }
 }
 
@@ -75,6 +75,7 @@
     grid-template-columns: repeat(2, auto);
     grid-template-rows: repeat(3, auto);
     column-gap: 24px;
+    row-gap: 27px;
   }
 }
 

@@ -80,7 +80,7 @@
 
   @include mobile {
     padding-right: 46px;
-    margin-bottom: 31px;
+    margin-bottom: 34px;
   }
 }
 
@@ -188,6 +188,16 @@
   @include tablet {
     margin-right: auto;
   }
+
+  @include mobile {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-width: auto;
+    flex-wrap: wrap;
+    margin-right: 0;
+    margin-left: -4px;
+  }
 }
 
 .footer__social-list {
@@ -196,7 +206,8 @@
 
   @include mobile {
     display: flex;
-    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
   }
 }
 
@@ -207,6 +218,8 @@
 
   @include mobile {
     padding-left: 0;
+    margin-bottom: 10px;
+    margin-right: 18px;
   }
 }
 
@@ -228,6 +241,11 @@
     @include animation;
 
     opacity: 0.3;
+  }
+
+  @include mobile {
+    width: 30px;
+    height: 30px;
   }
 }
 
