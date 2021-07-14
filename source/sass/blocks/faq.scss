@@ -107,7 +107,7 @@
   }
 }
 
-.faq__text {
+.faq__panel {
   @include style-reset;
   display: none;
 
@@ -129,7 +129,7 @@
   }
 }
 
-.active + .faq__text {
+.active + .faq__panel {
   @include tablet {
     margin-top: 26px;
     margin-bottom: 27px;
@@ -178,10 +178,10 @@
   transform: rotate(180deg);
 }
 
-.faq__list-item--active .faq__text {
+.faq__list-item--active .faq__panel {
   display: block;
 }
 
-.js-accordion--nojs .faq__text {
+.js-accordion--nojs .faq__panel {
   display: block;
 }

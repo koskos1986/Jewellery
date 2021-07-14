@@ -92,6 +92,7 @@
 
   @include mobile {
     width: 46%;
+    margin-right: 6.67vw;
     margin-bottom: 26px;
 
     &:nth-child(2n) {
@@ -101,6 +102,7 @@
 }
 
 .catalog__link {
+  width: 100%;
   margin-bottom: 15px;
 
   &:hover,
@@ -114,11 +116,14 @@
   }
 
   @include mobile {
+
     margin-bottom: 0;
   }
 }
 
 .catalog__link img {
+  width: 100%;
+
   @include tablet {
     margin-bottom: 10px;
   }
